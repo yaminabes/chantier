@@ -41,6 +41,31 @@ class User
      */
     public $confirm_password;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $adresse;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $numTel;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=MaitreOuvrage::class, inversedBy="users")
+     */
+    private $maitreOuvrage;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=ConducteurTravaux::class, inversedBy="users")
+     */
+    private $conducteurTraveaux;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Prestataires::class, inversedBy="users")
+     */
+    private $prestataire;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -78,6 +103,66 @@ class User
     public function setPassword(string $password): self
     {
         $this->password = $password;
+
+        return $this;
+    }
+
+    public function getAdresse(): ?string
+    {
+        return $this->adresse;
+    }
+
+    public function setAdresse(string $adresse): self
+    {
+        $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    public function getNumTel(): ?string
+    {
+        return $this->numTel;
+    }
+
+    public function setNumTel(string $numTel): self
+    {
+        $this->numTel = $numTel;
+
+        return $this;
+    }
+
+    public function getMaitreOuvrage(): ?MaitreOuvrage
+    {
+        return $this->maitreOuvrage;
+    }
+
+    public function setMaitreOuvrage(?MaitreOuvrage $maitreOuvrage): self
+    {
+        $this->maitreOuvrage = $maitreOuvrage;
+
+        return $this;
+    }
+
+    public function getConducteurTraveaux(): ?ConducteurTravaux
+    {
+        return $this->conducteurTraveaux;
+    }
+
+    public function setConducteurTraveaux(?ConducteurTravaux $conducteurTraveaux): self
+    {
+        $this->conducteurTraveaux = $conducteurTraveaux;
+
+        return $this;
+    }
+
+    public function getPrestataire(): ?Prestataires
+    {
+        return $this->prestataire;
+    }
+
+    public function setPrestataire(?Prestataires $prestataire): self
+    {
+        $this->prestataire = $prestataire;
 
         return $this;
     }
