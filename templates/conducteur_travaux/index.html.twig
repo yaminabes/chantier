@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ConducteurTravaux index{% endblock %}
+
+{% block body %}
+    <h1>ConducteurTravaux index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>NumeroMatricule</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for conducteur_travaux in conducteur_travauxes %}
+            <tr>
+                <td>{{ conducteur_travaux.id }}</td>
+                <td>{{ conducteur_travaux.numeroMatricule }}</td>
+                <td>
+                    <a href="{{ path('conducteur_travaux_show', {'id': conducteur_travaux.id}) }}">show</a>
+                    <a href="{{ path('conducteur_travaux_edit', {'id': conducteur_travaux.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('conducteur_travaux_new') }}">Create new</a>
+{% endblock %}

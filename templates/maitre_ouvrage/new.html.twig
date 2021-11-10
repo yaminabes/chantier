@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New MaitreOuvrage{% endblock %}
+
+{% block body %}
+    <h1>Create new MaitreOuvrage</h1>
+
+    {{ include('maitre_ouvrage/_form.html.twig') }}
+
+    <a href="{{ path('maitre_ouvrage_index') }}">back to list</a>
+{% endblock %}

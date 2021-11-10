@@ -22,7 +22,7 @@ class MaitreOuvrage
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $numeroMatricule;
+    private $numeroClient;
 
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="maitreOuvrage")
@@ -41,12 +41,12 @@ class MaitreOuvrage
 
     public function getNumeroMatricule(): ?string
     {
-        return $this->numeroMatricule;
+        return $this->numeroClient;
     }
 
-    public function setNumeroMatricule(string $numeroMatricule): self
+    public function setNumeroMatricule(string $numeroClient): self
     {
-        $this->numeroMatricule = $numeroMatricule;
+        $this->numeroClient = $numeroClient;
 
         return $this;
     }

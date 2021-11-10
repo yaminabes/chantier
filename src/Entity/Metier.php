@@ -77,7 +77,7 @@ class Metier
 
     public function __toString()
     {
-        return $this.$this->corps_metier;
+        return $this->corps_metier;
     }
 
 
