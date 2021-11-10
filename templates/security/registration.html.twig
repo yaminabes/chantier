@@ -15,10 +15,12 @@
         'attr': {'placeholder': 'Mot de passe ...', 'class' : 'form-control'}}) }}
     {{ form_row(form.confirm_password, {'label': 'Confirmation du Mot de passe',
         'attr': {'placeholder': 'Confirmez votre mot de passe ...', 'class' : 'form-control'}}) }}
-    {{ form_row(form.adresse, {'label': 'Confirmation du Mot de passe',
-        'attr': {'placeholder': 'Confirmez votre mot de passe ...', 'class' : 'form-control'}}) }}
-    {{ form_row(form.numtel, {'label': 'Confirmation du Mot de passe',
-        'attr': {'placeholder': 'Confirmez votre mot de passe ...', 'class' : 'form-control'}}) }}
+    {{ form_row(form.adresse, {'label': 'Adresse Postale',
+        'attr': {'placeholder': 'Entrez votre adresse postale...', 'class' : 'form-control'}}) }}
+    {{ form_row(form.numtel, {'label': 'Numéro de téléphone',
+        'attr': {'placeholder': 'Entrez votre numéro de téléphone...', 'class' : 'form-control'}}) }}
+    {{ form_row(form.role_user, {'label': 'Rôle demandé :',}) }}
+
 
     <button type="submit" class="btn btn-success">Inscription</button>
     {{ form_end (form)}}

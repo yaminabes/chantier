@@ -4,14 +4,16 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @ORM\Table(name="`user`")
+ * @method string getUserIdentifier()
  */
-class User
+class User implements UserInterface
 {
     /**
      * @ORM\Id
@@ -73,6 +75,8 @@ class User
      * @ORM\Column(type="json")
      */
     private $roles = [];
+
+
 
     public function getId(): ?int
     {
@@ -186,12 +190,36 @@ class User
     /**
      * @param array $roles
      */
+
+    private $role_user;
+
     public function setRoles(array $roles): void
     {
         $this->roles = $roles;
     }
 
+    public function getRoleUser(): ?string
+    {
+        return $this->role_user;
+    }
 
+    public function setRoleUser(string $role_user): self
+    {
+        $this->role_user = $role_user;
+
+        return $this;
+    }
+
+
+    public function eraseCredentials()
+    {
+        // TODO: Implement eraseCredentials() method.
+    }
+
+    public function getSalt()
+    {
+        // TODO: Implement getSalt() method.
+    }
 
 
 }
