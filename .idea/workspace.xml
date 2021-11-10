@@ -10,8 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="pb de inscription reglé">
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="inscription avec influence bdd">
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/registration.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +202,7 @@
       <workItem from="1635675043120" duration="4309000" />
       <workItem from="1635691891451" duration="764000" />
       <workItem from="1636197850903" duration="308000" />
-      <workItem from="1636443286084" duration="18152000" />
+      <workItem from="1636443286084" duration="18747000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
@@ -223,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636539734949</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="inscription avec influence bdd">
+      <created>1636541316888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636541316888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +255,8 @@
     <MESSAGE value="added some cruds" />
     <MESSAGE value="adding templates" />
     <MESSAGE value="pb de inscription reglé" />
-    <option name="LAST_COMMIT_MESSAGE" value="pb de inscription reglé" />
+    <MESSAGE value="inscription avec influence bdd" />
+    <option name="LAST_COMMIT_MESSAGE" value="inscription avec influence bdd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="701" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636478309500">
@@ -269,10 +279,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636473639644" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1636539779540">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1636541321398">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1636539779540" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1636541321398" />
     <state x="777" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636531424301">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -281,10 +291,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="687" y="292" width="742" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1635675216518" />
-    <state x="660" y="252" key="run.anything.popup" timestamp="1636536259532">
+    <state x="660" y="252" key="run.anything.popup" timestamp="1636541657932">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1636536259532" />
+    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1636541657932" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

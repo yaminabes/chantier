@@ -27,6 +27,7 @@ class SecurityController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()){
             $user->setAdresse("adresse");
             $user->setNumTel("094238");
+            $user->setRoles(["ROLE_USER"]);
             $manager->persist($user);
             $manager->flush();
         }
