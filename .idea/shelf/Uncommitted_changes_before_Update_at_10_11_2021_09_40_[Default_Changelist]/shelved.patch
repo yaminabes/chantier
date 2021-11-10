@@ -1,0 +1,260 @@
+Index: templates/base.html.twig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>{% block title %}Welcome!{% endblock %}</title>\n        {# Run `composer require symfony/webpack-encore-bundle`\n           and uncomment the following Encore helpers to start using Symfony UX #}\n        {% block stylesheets %}\n            {{ encore_entry_link_tags('app') }}\n        {% endblock %}\n\n        {% block javascripts %}\n            {{ encore_entry_script_tags('app') }}\n        {% endblock %}\n    </head>\n    <body>\n        {% block body %}{% endblock %}\n    </body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/base.html.twig b/templates/base.html.twig
+--- a/templates/base.html.twig	(revision b5108d65e63c8c5d89c3980830ebd0b56884a911)
++++ b/templates/base.html.twig	(date 1636532170693)
+@@ -12,8 +12,56 @@
+         {% block javascripts %}
+             {{ encore_entry_script_tags('app') }}
+         {% endblock %}
++
++
+     </head>
+     <body>
+-        {% block body %}{% endblock %}
++
++
++        <nav class="navbar navbar-expand-lg navbar-light bg-light">
++            <div class="container-fluid">
++                <a class="navbar-brand" href="#">
++                    <img src="./templates/security/LogoLaisseBeton.png" width="30" height="30" class="d-inline-block align-top" alt="">
++                </a>
++                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
++                    <span class="navbar-toggler-icon"></span>
++                </button>
++                <div class="collapse navbar-collapse" id="navbarSupportedContent">
++                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
++                        <li class="nav-item">
++                            <a class="nav-link active" aria-current="page" href="#">Menu</a>
++                        </li>
++                        <li class="nav-item">
++                            <a class="nav-link" href="{{ path('security_registration') }}">Inscription</a>
++                        </li>
++                        <li class="nav-item">
++                            <a class="nav-link" href="/">S'identifier</a>
++                        </li>
++                        <li class="nav-item dropdown">
++                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mon compte
++                            </a>
++                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
++                                <li><a class="dropdown-item" href="#">Profil</a></li>
++                                <li><a class="dropdown-item" href="#">Chantier</a></li>
++                                <li><hr class="dropdown-divider"></li>
++                                <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
++                            </ul>
++                        </li>
++                        <li class="nav-item">
++                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Laisse Béton</a>
++                        </li>
++                    </ul>
++                    <form class="d-flex">
++                        <input class="form-control me-2" type="search" placeholder="Rechercher un chantier..." aria-label="Search">
++                        <button class="btn btn-outline-success" type="submit">Rechercher</button>
++                    </form>
++                </div>
++            </div>
++        </nav>
++
++        {% block body %}
++
++        {% endblock %}
++
+     </body>
+ </html>
+Index: templates/home/index.html.twig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends 'base.html.twig' %}\n\n{% block title %}Hello HomeController!{% endblock %}\n\n{% block body %}\n    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n        <div class=\"container-fluid\">\n            <a class=\"navbar-brand\" href=\"#\">Navbar</a>\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <span class=\"navbar-toggler-icon\"></span>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link\" href=\"#\">Link</a>\n                    </li>\n                    <li class=\"nav-item dropdown\">\n                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n                            Dropdown\n                        </a>\n                        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n                            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n                            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n                            <li><hr class=\"dropdown-divider\"></li>\n                            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n                        </ul>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n                    </li>\n                </ul>\n                <form class=\"d-flex\">\n                    <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n                    <button class=\"btn btn-outline-success\" type=\"submit\">Search</button>\n                </form>\n            </div>\n        </div>\n    </nav>\n{% endblock %}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/home/index.html.twig b/templates/home/index.html.twig
+--- a/templates/home/index.html.twig	(revision b5108d65e63c8c5d89c3980830ebd0b56884a911)
++++ b/templates/home/index.html.twig	(date 1636532170733)
+@@ -3,40 +3,6 @@
+ {% block title %}Hello HomeController!{% endblock %}
+ 
+ {% block body %}
+-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+-        <div class="container-fluid">
+-            <a class="navbar-brand" href="#">Navbar</a>
+-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+-                <span class="navbar-toggler-icon"></span>
+-            </button>
+-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+-                    <li class="nav-item">
+-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+-                    </li>
+-                    <li class="nav-item">
+-                        <a class="nav-link" href="#">Link</a>
+-                    </li>
+-                    <li class="nav-item dropdown">
+-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+-                            Dropdown
+-                        </a>
+-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+-                            <li><a class="dropdown-item" href="#">Action</a></li>
+-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+-                            <li><hr class="dropdown-divider"></li>
+-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+-                        </ul>
+-                    </li>
+-                    <li class="nav-item">
+-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+-                    </li>
+-                </ul>
+-                <form class="d-flex">
+-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+-                    <button class="btn btn-outline-success" type="submit">Search</button>
+-                </form>
+-            </div>
+-        </div>
+-    </nav>
++
++
+ {% endblock %}
+Index: .env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.env b/.env
+new file mode 100644
+--- /dev/null	(date 1636533072916)
++++ b/.env	(date 1636533072916)
+@@ -0,0 +1,32 @@
++# In all environments, the following files are loaded if they exist,
++# the latter taking precedence over the former:
++#
++#  * .env                contains default values for the environment variables needed by the app
++#  * .env.local          uncommitted file with local overrides
++#  * .env.$APP_ENV       committed environment-specific defaults
++#  * .env.$APP_ENV.local uncommitted environment-specific overrides
++#
++# Real environment variables win over .env files.
++#
++# DO NOT DEFINE PRODUCTION SECRETS IN THIS FILE NOR IN ANY OTHER COMMITTED FILES.
++#
++# Run "composer dump-env prod" to compile .env files for production use (requires symfony/flex >=1.2).
++# https://symfony.com/doc/current/best_practices.html#use-environment-variables-for-infrastructure-configuration
++
++###> symfony/framework-bundle ###
++APP_ENV=dev
++APP_SECRET=28b009da83e0664a0e0e5a1151cde1d8
++###< symfony/framework-bundle ###
++
++###> symfony/mailer ###
++# MAILER_DSN=smtp://localhost
++###< symfony/mailer ###
++
++###> doctrine/doctrine-bundle ###
++# Format described at https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html#connecting-using-a-url
++# IMPORTANT: You MUST configure your server version, either here or in config/packages/doctrine.yaml
++#
++# DATABASE_URL="sqlite:///%kernel.project_dir%/var/data.db"
++DATABASE_URL="mysql://admin:password@172.23.93.50:3306/chantier?serverVersion=10.3.31-MariaDB-0ubuntu0.20.04.1 Ubuntu 20.04"
++#DATABASE_URL="postgresql://symfony:ChangeMe@172.23.93.50:5432/app?serverVersion=13&charset=utf8"
++###< doctrine/doctrine-bundle ###
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"903d9a10-5bcf-4428-810a-7ac8557f6ddf\" name=\"Default Changelist\" comment=\"added some cruds\">\n      <change afterPath=\"$PROJECT_DIR$/src/Controller/PrestataireController.php\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Form/PrestataireType.php\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Repository/PrestataireRepository.php\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/templates/prestataire/_form.html.twig\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/templates/prestataire/edit.html.twig\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/templates/prestataire/index.html.twig\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/templates/prestataire/new.html.twig\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/templates/prestataire/show.html.twig\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.env\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/config/packages/twig.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/config/packages/twig.yaml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\" doNotAsk=\"true\" synchronizationState=\"SYNCHRONIZE\">\n    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\n  </component>\n  <component name=\"PhpWorkspaceProjectConfiguration\">\n    <include_path>\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/cli-parser\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-enumerator\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/exporter\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-reflector\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/recursion-context\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/code-unit\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/resource-operations\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/complexity\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/version\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/type\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/lines-of-code\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/diff\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/global-state\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/environment\" />\n      <path value=\"$PROJECT_DIR$/vendor/sensio/framework-extra-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/webmozart/assert\" />\n      <path value=\"$PROJECT_DIR$/vendor/monolog/monolog\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/type-resolver\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-common\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock\" />\n      <path value=\"$PROJECT_DIR$/vendor/composer\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-text-template\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-timer\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-invoker\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-file-iterator\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-code-coverage\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/form\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/console\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-guard\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/config\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/options-resolver\" />\n      <path value=\"$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-foundation\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/phpunit\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/maker-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/orm\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dom-crawler\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-client-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/vendor/nikic/php-parser\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/yaml\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-http\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/error-handler\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/browser-kit\" />\n      <path value=\"$PROJECT_DIR$/vendor/theseer/tokenizer\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/dbal\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/mailer\" />\n      <path value=\"$PROJECT_DIR$/vendor/egulias/email-validator\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/css-selector\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/sql-formatter\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-csrf\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/phpunit-bridge\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-access\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/password-hasher\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-dumper\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/migrations\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/link\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dotenv\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/container\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/cache\" />\n      <path value=\"$PROJECT_DIR$/vendor/psr/log\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/deprecation-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/debug-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/runtime\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-mbstring\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/web-link\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bridge\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/notifier\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php80\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/mime\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/monolog-bridge\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/service-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/validator\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/asset\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/expression-language\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/routing\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/process\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/stopwatch\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-info\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn\" />\n      <path value=\"$PROJECT_DIR$/vendor/myclabs/deep-copy\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php81\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/string\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/monolog-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/twig/twig\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/serializer\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/framework-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/twig/extra-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php73\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/flex\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-kernel\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/filesystem\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/doctrine-bridge\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-core\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/finder\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/intl\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-client\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/web-profiler-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-exporter\" />\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dependency-injection\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/cache\" />\n      <path value=\"$PROJECT_DIR$/vendor/phpspec/prophecy\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/deprecations\" />\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-code\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/inflector\" />\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/manifest\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/version\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-bundle\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/event-manager\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/collections\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/lexer\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/instantiator\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/annotations\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/persistence\" />\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/common\" />\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/comparator\" />\n    </include_path>\n  </component>\n  <component name=\"ProjectId\" id=\"20GYAAxuIRASBtkRIkGRZxPP8s8\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"php.override.implement.member.chooser.php.doc\" value=\"NONE\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/Controller/typeChantier\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"phpunit.xml.dist\" type=\"PHPUnitRunConfigurationType\" factoryName=\"PHPUnit\">\n      <TestRunner scope=\"XML\" />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"903d9a10-5bcf-4428-810a-7ac8557f6ddf\" name=\"Default Changelist\" comment=\"\" />\n      <created>1635672245841</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1635672245841</updated>\n      <workItem from=\"1635672246942\" duration=\"2104000\" />\n      <workItem from=\"1635675043120\" duration=\"4309000\" />\n      <workItem from=\"1635691891451\" duration=\"764000\" />\n      <workItem from=\"1636197850903\" duration=\"308000\" />\n      <workItem from=\"1636443286084\" duration=\"11558000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"added some cruds\">\n      <created>1636529835700</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1636529835700</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"added some cruds\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"added some cruds\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"701\" y=\"355\" width=\"579\" height=\"403\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1636478309500\">\n      <screen x=\"72\" y=\"27\" width=\"1848\" height=\"1053\" />\n    </state>\n    <state x=\"701\" y=\"355\" width=\"579\" height=\"403\" key=\"#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053\" timestamp=\"1636478309500\" />\n    <state x=\"785\" y=\"234\" width=\"412\" height=\"645\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1636478788867\">\n      <screen x=\"72\" y=\"27\" width=\"1848\" height=\"1053\" />\n    </state>\n    <state x=\"785\" y=\"234\" width=\"412\" height=\"645\" key=\"#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053\" timestamp=\"1636478788867\" />\n    <state x=\"791\" y=\"479\" width=\"399\" height=\"156\" key=\"NewPhpFileDialog\" timestamp=\"1636473639644\">\n      <screen x=\"72\" y=\"27\" width=\"1848\" height=\"1053\" />\n    </state>\n    <state x=\"791\" y=\"479\" width=\"399\" height=\"156\" key=\"NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053\" timestamp=\"1636473639644\" />\n    <state x=\"591\" y=\"289\" width=\"800\" height=\"535\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1636529844319\">\n      <screen x=\"72\" y=\"27\" width=\"1848\" height=\"1053\" />\n    </state>\n    <state x=\"591\" y=\"289\" width=\"800\" height=\"535\" key=\"Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053\" timestamp=\"1636529844319\" />\n    <state x=\"777\" y=\"468\" width=\"438\" height=\"177\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1636529776816\">\n      <screen x=\"72\" y=\"27\" width=\"1848\" height=\"1053\" />\n    </state>\n    <state x=\"777\" y=\"468\" width=\"438\" height=\"177\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053\" timestamp=\"1636529776816\" />\n    <state x=\"687\" y=\"292\" width=\"742\" height=\"522\" key=\"find.popup\" timestamp=\"1635675216518\">\n      <screen x=\"72\" y=\"27\" width=\"1848\" height=\"1053\" />\n    </state>\n    <state x=\"687\" y=\"292\" width=\"742\" height=\"522\" key=\"find.popup/72.27.1848.1053@72.27.1848.1053\" timestamp=\"1635675216518\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b5108d65e63c8c5d89c3980830ebd0b56884a911)
++++ b/.idea/workspace.xml	(date 1636533465441)
+@@ -10,18 +10,11 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="added some cruds">
+-      <change afterPath="$PROJECT_DIR$/src/Controller/PrestataireController.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Form/PrestataireType.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Repository/PrestataireRepository.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/prestataire/_form.html.twig" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/prestataire/edit.html.twig" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/prestataire/index.html.twig" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/prestataire/new.html.twig" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/prestataire/show.html.twig" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
++    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
++      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -173,6 +166,7 @@
+   </component>
+   <component name="ProjectId" id="20GYAAxuIRASBtkRIkGRZxPP8s8" />
+   <component name="ProjectLevelVcsManager">
++    <OptionsSetting value="false" id="Update" />
+     <ConfirmationsSetting value="2" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+@@ -211,16 +205,10 @@
+       <workItem from="1635675043120" duration="4309000" />
+       <workItem from="1635691891451" duration="764000" />
+       <workItem from="1636197850903" duration="308000" />
+-      <workItem from="1636443286084" duration="11558000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="added some cruds">
+-      <created>1636529835700</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1636529835700</updated>
++      <workItem from="1636443286084" duration="10367000" />
++      <workItem from="1636532743772" duration="495000" />
++      <workItem from="1636533385677" duration="80000" />
+     </task>
+-    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -240,34 +228,6 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+-    <MESSAGE value="added some cruds" />
+-    <option name="LAST_COMMIT_MESSAGE" value="added some cruds" />
+-  </component>
+-  <component name="WindowStateProjectService">
+-    <state x="701" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636478309500">
+-      <screen x="72" y="27" width="1848" height="1053" />
+-    </state>
+-    <state x="701" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1636478309500" />
+-    <state x="785" y="234" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1636478788867">
+-      <screen x="72" y="27" width="1848" height="1053" />
+-    </state>
+-    <state x="785" y="234" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1636478788867" />
+-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1636473639644">
+-      <screen x="72" y="27" width="1848" height="1053" />
+-    </state>
+-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636473639644" />
+-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1636529844319">
+-      <screen x="72" y="27" width="1848" height="1053" />
+-    </state>
+-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1636529844319" />
+-    <state x="777" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636529776816">
+-      <screen x="72" y="27" width="1848" height="1053" />
+-    </state>
+-    <state x="777" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1636529776816" />
+-    <state x="687" y="292" width="742" height="522" key="find.popup" timestamp="1635675216518">
+-      <screen x="72" y="27" width="1848" height="1053" />
+-    </state>
+-    <state x="687" y="292" width="742" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1635675216518" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
