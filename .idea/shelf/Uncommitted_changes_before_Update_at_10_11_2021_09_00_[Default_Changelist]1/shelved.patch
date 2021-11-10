@@ -1,0 +1,152 @@
+Index: templates/base.html.twig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>{% block title %}Welcome!{% endblock %}</title>\n        {# Run `composer require symfony/webpack-encore-bundle`\n           and uncomment the following Encore helpers to start using Symfony UX #}\n        {% block stylesheets %}\n            {{ encore_entry_link_tags('app') }}\n        {% endblock %}\n\n        {% block javascripts %}\n            {{ encore_entry_script_tags('app') }}\n        {% endblock %}\n    </head>\n    <body>\n        {% block body %}{% endblock %}\n    </body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/base.html.twig b/templates/base.html.twig
+--- a/templates/base.html.twig	
++++ b/templates/base.html.twig	
+@@ -12,8 +12,56 @@
+         {% block javascripts %}
+             {{ encore_entry_script_tags('app') }}
+         {% endblock %}
++
++
+     </head>
+     <body>
+-        {% block body %}{% endblock %}
++
++
++        <nav class="navbar navbar-expand-lg navbar-light bg-light">
++            <div class="container-fluid">
++                <a class="navbar-brand" href="#">
++                    <img src="./templates/security/LogoLaisseBeton.png" width="30" height="30" class="d-inline-block align-top" alt="">
++                </a>
++                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
++                    <span class="navbar-toggler-icon"></span>
++                </button>
++                <div class="collapse navbar-collapse" id="navbarSupportedContent">
++                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
++                        <li class="nav-item">
++                            <a class="nav-link active" aria-current="page" href="#">Menu</a>
++                        </li>
++                        <li class="nav-item">
++                            <a class="nav-link" href="{{ path('security_registration') }}">Inscription</a>
++                        </li>
++                        <li class="nav-item">
++                            <a class="nav-link" href="/">S'identifier</a>
++                        </li>
++                        <li class="nav-item dropdown">
++                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mon compte
++                            </a>
++                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
++                                <li><a class="dropdown-item" href="#">Profil</a></li>
++                                <li><a class="dropdown-item" href="#">Chantier</a></li>
++                                <li><hr class="dropdown-divider"></li>
++                                <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
++                            </ul>
++                        </li>
++                        <li class="nav-item">
++                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Laisse Béton</a>
++                        </li>
++                    </ul>
++                    <form class="d-flex">
++                        <input class="form-control me-2" type="search" placeholder="Rechercher un chantier..." aria-label="Search">
++                        <button class="btn btn-outline-success" type="submit">Rechercher</button>
++                    </form>
++                </div>
++            </div>
++        </nav>
++
++        {% block body %}
++
++        {% endblock %}
++
+     </body>
+ </html>
+Index: src/Controller/SecurityController.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\n\nnamespace App\\Controller;\n\nuse App\\Entity\\User;\nuse App\\Form\\RegistrationType;\nuse Doctrine\\Persistence\\ObjectManager;\nuse Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController;\nuse Symfony\\Component\\HttpFoundation\\Request;\nuse Symfony\\Component\\HttpFoundation\\Response;\nuse Symfony\\Component\\Routing\\Annotation\\Route;\n\nclass SecurityController extends AbstractController\n{\n    /**\n     * @Route(\"/inscription\", name=\"security_registration\")\n     */\n\n    public function registration(/*Request $request, ObjectManager $manager*/){\n        $user = new User();\n\n        $form = $this->createForm(RegistrationType::class, $user);\n\n        /*$form->handleRequest($request);\n\n        if ($form->isSubmitted() && $form->isValid()){\n            $manager->persist(user);\n            $manager->flush();\n        }*/\n\n        return $this->render('security/registration.html.twig', [\n            'form' => $form->createView()\n        ]);\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Controller/SecurityController.php b/src/Controller/SecurityController.php
+--- a/src/Controller/SecurityController.php	
++++ b/src/Controller/SecurityController.php	
+@@ -16,17 +16,17 @@
+      * @Route("/inscription", name="security_registration")
+      */
+ 
+-    public function registration(/*Request $request, ObjectManager $manager*/){
++    public function registration(Request $request, ObjectManager $manager){
+         $user = new User();
+ 
+         $form = $this->createForm(RegistrationType::class, $user);
+ 
+-        /*$form->handleRequest($request);
++        $form->handleRequest($request);
+ 
+         if ($form->isSubmitted() && $form->isValid()){
+             $manager->persist(user);
+             $manager->flush();
+-        }*/
++        }
+ 
+         return $this->render('security/registration.html.twig', [
+             'form' => $form->createView()
+Index: templates/home/index.html.twig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends 'base.html.twig' %}\n\n{% block title %}Hello HomeController!{% endblock %}\n\n{% block body %}\n    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n        <div class=\"container-fluid\">\n            <a class=\"navbar-brand\" href=\"#\">Navbar</a>\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <span class=\"navbar-toggler-icon\"></span>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link\" href=\"#\">Link</a>\n                    </li>\n                    <li class=\"nav-item dropdown\">\n                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n                            Dropdown\n                        </a>\n                        <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n                            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n                            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n                            <li><hr class=\"dropdown-divider\"></li>\n                            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n                        </ul>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n                    </li>\n                </ul>\n                <form class=\"d-flex\">\n                    <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n                    <button class=\"btn btn-outline-success\" type=\"submit\">Search</button>\n                </form>\n            </div>\n        </div>\n    </nav>\n{% endblock %}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/home/index.html.twig b/templates/home/index.html.twig
+--- a/templates/home/index.html.twig	
++++ b/templates/home/index.html.twig	
+@@ -3,40 +3,6 @@
+ {% block title %}Hello HomeController!{% endblock %}
+ 
+ {% block body %}
+-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+-        <div class="container-fluid">
+-            <a class="navbar-brand" href="#">Navbar</a>
+-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+-                <span class="navbar-toggler-icon"></span>
+-            </button>
+-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+-                    <li class="nav-item">
+-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+-                    </li>
+-                    <li class="nav-item">
+-                        <a class="nav-link" href="#">Link</a>
+-                    </li>
+-                    <li class="nav-item dropdown">
+-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+-                            Dropdown
+-                        </a>
+-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+-                            <li><a class="dropdown-item" href="#">Action</a></li>
+-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+-                            <li><hr class="dropdown-divider"></li>
+-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+-                        </ul>
+-                    </li>
+-                    <li class="nav-item">
+-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+-                    </li>
+-                </ul>
+-                <form class="d-flex">
+-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+-                    <button class="btn btn-outline-success" type="submit">Search</button>
+-                </form>
+-            </div>
+-        </div>
+-    </nav>
++
++
+ {% endblock %}
