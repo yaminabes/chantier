@@ -10,34 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211109170449.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MetierController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TypeBatimentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Metier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Prestataire.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/MetierType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/TypeBatimentType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/MetierRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TypeChantierRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/metier/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/metier/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/metier/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/metier/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/metier/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/metier/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type_batiment/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type_batiment/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type_batiment/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type_batiment/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type_batiment/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/type_batiment/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211109145853.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="added some cruds">
+      <change afterPath="$PROJECT_DIR$/src/Controller/PrestataireController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PrestataireType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PrestataireRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/prestataire/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/prestataire/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/prestataire/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/prestataire/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/prestataire/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,8 +211,16 @@
       <workItem from="1635675043120" duration="4309000" />
       <workItem from="1635691891451" duration="764000" />
       <workItem from="1636197850903" duration="308000" />
-      <workItem from="1636443286084" duration="10367000" />
+      <workItem from="1636443286084" duration="11558000" />
     </task>
+    <task id="LOCAL-00001" summary="added some cruds">
+      <created>1636529835700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636529835700</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +240,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added some cruds" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some cruds" />
   </component>
   <component name="WindowStateProjectService">
     <state x="701" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636478309500">
@@ -262,6 +256,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636473639644" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1636529844319">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1636529844319" />
     <state x="777" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636529776816">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
