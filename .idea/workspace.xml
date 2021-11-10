@@ -10,18 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="pb de inscription reglé">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211110105003.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211110105006.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211110111922.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211110134925.php" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="Encodage des mdp OK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/registration.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636539734949</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Encodage des mdp OK">
+      <created>1636554807726</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636554807726</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +255,8 @@
     <MESSAGE value="added some cruds" />
     <MESSAGE value="adding templates" />
     <MESSAGE value="pb de inscription reglé" />
-    <option name="LAST_COMMIT_MESSAGE" value="pb de inscription reglé" />
+    <MESSAGE value="Encodage des mdp OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Encodage des mdp OK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
