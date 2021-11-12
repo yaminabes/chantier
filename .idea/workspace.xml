@@ -10,36 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211111103252.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211111212206.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211111223756.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211111224205.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211111232600.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211111232652.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211112083515.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211112085404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211112085817.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211112090011.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211112090646.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211112095532.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/PhaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Phase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/StatutTache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Tache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/PhaseType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/PhaseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/StatutTacheRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TacheRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/phase/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/phase/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/phase/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/phase/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/phase/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/phase/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,7 +221,7 @@
       <workItem from="1635691891451" duration="764000" />
       <workItem from="1636197850903" duration="308000" />
       <workItem from="1636443286084" duration="18152000" />
-      <workItem from="1636618755077" duration="23519000" />
+      <workItem from="1636618755077" duration="23865000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
@@ -287,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636555259163</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Email Unique OK">
+      <created>1636713811581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636713811581</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
