@@ -29,9 +29,26 @@ class ConducteurTravaux
      */
     private $users;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $prenom;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Facture::class, mappedBy="conducteur_travaux")
+     */
+    private $factures;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Chantier::class, mappedBy="conducteur_travaux")
+     */
+    private $chantiers;
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
+        $this->factures = new ArrayCollection();
+        $this->chantiers = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -75,6 +92,78 @@ class ConducteurTravaux
             // set the owning side to null (unless already changed)
             if ($user->getConducteurTraveaux() === $this) {
                 $user->setConducteurTraveaux(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getPrenom(): ?string
+    {
+        return $this->prenom;
+    }
+
+    public function setPrenom(string $prenom): self
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Facture[]
+     */
+    public function getFactures(): Collection
+    {
+        return $this->factures;
+    }
+
+    public function addFacture(Facture $facture): self
+    {
+        if (!$this->factures->contains($facture)) {
+            $this->factures[] = $facture;
+            $facture->setConducteurTravaux($this);
+        }
+
+        return $this;
+    }
+
+    public function removeFacture(Facture $facture): self
+    {
+        if ($this->factures->removeElement($facture)) {
+            // set the owning side to null (unless already changed)
+            if ($facture->getConducteurTravaux() === $this) {
+                $facture->setConducteurTravaux(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Chantier[]
+     */
+    public function getChantiers(): Collection
+    {
+        return $this->chantiers;
+    }
+
+    public function addChantier(Chantier $chantier): self
+    {
+        if (!$this->chantiers->contains($chantier)) {
+            $this->chantiers[] = $chantier;
+            $chantier->setConducteurTravaux($this);
+        }
+
+        return $this;
+    }
+
+    public function removeChantier(Chantier $chantier): self
+    {
+        if ($this->chantiers->removeElement($chantier)) {
+            // set the owning side to null (unless already changed)
+            if ($chantier->getConducteurTravaux() === $this) {
+                $chantier->setConducteurTravaux(null);
             }
         }
 

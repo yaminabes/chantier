@@ -29,9 +29,15 @@ class Metier
      */
     private $prestataires;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Tache::class, mappedBy="metier")
+     */
+    private $taches;
+
     public function __construct()
     {
         $this->prestataires = new ArrayCollection();
+        $this->taches = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -78,6 +84,36 @@ class Metier
     public function __toString()
     {
         return $this->corps_metier;
+    }
+
+    /**
+     * @return Collection|Tache[]
+     */
+    public function getTaches(): Collection
+    {
+        return $this->taches;
+    }
+
+    public function addTach(Tache $tach): self
+    {
+        if (!$this->taches->contains($tach)) {
+            $this->taches[] = $tach;
+            $tach->setMetier($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTach(Tache $tach): self
+    {
+        if ($this->taches->removeElement($tach)) {
+            // set the owning side to null (unless already changed)
+            if ($tach->getMetier() === $this) {
+                $tach->setMetier(null);
+            }
+        }
+
+        return $this;
     }
 
 

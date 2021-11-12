@@ -34,14 +34,21 @@ class Phase
      */
     private $dateFin;
 
+
     /**
-     * @ORM\OneToMany(targetEntity=Chantier::class, mappedBy="Phase", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=Tache::class, mappedBy="phase")
      */
-    private $chantiers;
+    private $taches;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Chantier::class, inversedBy="phases")
+     */
+    private $chantier;
 
     public function __construct()
     {
-        $this->chantiers = new ArrayCollection();
+        $this->taches = new ArrayCollection();
+        $this->chantier = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -85,19 +92,50 @@ class Phase
         return $this;
     }
 
+
+
+    /**
+     * @return Collection|Tache[]
+     */
+    public function getTaches(): Collection
+    {
+        return $this->taches;
+    }
+
+    public function addTach(Tache $tach): self
+    {
+        if (!$this->taches->contains($tach)) {
+            $this->taches[] = $tach;
+            $tach->setPhase($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTach(Tache $tach): self
+    {
+        if ($this->taches->removeElement($tach)) {
+            // set the owning side to null (unless already changed)
+            if ($tach->getPhase() === $this) {
+                $tach->setPhase(null);
+            }
+        }
+
+        return $this;
+    }
+
     /**
      * @return Collection|Chantier[]
      */
-    public function getChantiers(): Collection
+    public function getChantier(): Collection
     {
-        return $this->chantiers;
+        return $this->chantier;
     }
 
     public function addChantier(Chantier $chantier): self
     {
-        if (!$this->chantiers->contains($chantier)) {
-            $this->chantiers[] = $chantier;
-            $chantier->setPhase($this);
+        if (!$this->chantier->contains($chantier)) {
+            $this->chantier[] = $chantier;
         }
 
         return $this;
@@ -105,12 +143,7 @@ class Phase
 
     public function removeChantier(Chantier $chantier): self
     {
-        if ($this->chantiers->removeElement($chantier)) {
-            // set the owning side to null (unless already changed)
-            if ($chantier->getPhase() === $this) {
-                $chantier->setPhase(null);
-            }
-        }
+        $this->chantier->removeElement($chantier);
 
         return $this;
     }

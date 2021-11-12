@@ -29,9 +29,20 @@ class MaitreOuvrage
      */
     private $users;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $prenom;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Chantier::class, mappedBy="maitre_ouvrage")
+     */
+    private $chantiers;
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
+        $this->chantiers = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -39,12 +50,12 @@ class MaitreOuvrage
         return $this->id;
     }
 
-    public function getNumeroMatricule(): ?string
+    public function getNumeroClient(): ?string
     {
         return $this->numeroClient;
     }
 
-    public function setNumeroMatricule(string $numeroClient): self
+    public function setNumeroClient(string $numeroClient): self
     {
         $this->numeroClient = $numeroClient;
 
@@ -75,6 +86,48 @@ class MaitreOuvrage
             // set the owning side to null (unless already changed)
             if ($user->getMaitreOuvrage() === $this) {
                 $user->setMaitreOuvrage(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getPrenom(): ?string
+    {
+        return $this->prenom;
+    }
+
+    public function setPrenom(string $prenom): self
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Chantier[]
+     */
+    public function getChantiers(): Collection
+    {
+        return $this->chantiers;
+    }
+
+    public function addChantier(Chantier $chantier): self
+    {
+        if (!$this->chantiers->contains($chantier)) {
+            $this->chantiers[] = $chantier;
+            $chantier->setMaitreOuvrage($this);
+        }
+
+        return $this;
+    }
+
+    public function removeChantier(Chantier $chantier): self
+    {
+        if ($this->chantiers->removeElement($chantier)) {
+            // set the owning side to null (unless already changed)
+            if ($chantier->getMaitreOuvrage() === $this) {
+                $chantier->setMaitreOuvrage(null);
             }
         }
 
