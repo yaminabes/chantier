@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Phase index{% endblock %}
+
+{% block body %}
+    <h1>Phase index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>nom_phase</th>
+            <th>date_debut</th>
+            <th>date_fin</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if phase is defined %}
+        {% for phase in phases %}
+            <tr>
+                <td>{{ phase.id }}</td>
+                <td>{{ phase.nom_phase }}</td>
+                <td>{{ phase.date_debut }}</td>
+                <td>{{ phase.date_fin }}</td>
+                <td>
+                    <a href="{{ path('phase_show', {'id': phase.id}) }}">show</a>
+                    <a href="{{ path('phase_edit', {'id': phase.id}) }}">edit</a>
+                    <a href="{{ path('phase_show', {'nom_phase': phase.nom_phase}) }}">show</a>
+                    <a href="{{ path('phase_edit', {'nom_phase': phase.nom_phase}) }}">edit</a>
+                    <a href="{{ path('phase_show', {'date-debut': phase.date-debut}) }}">show</a>
+                    <a href="{{ path('phase_edit', {'date-debut': phase.date-debut}) }}">edit</a>
+                    <a href="{{ path('phase_show', {'date-fin': phase.date-fin}) }}">show</a>
+                    <a href="{{ path('phase_edit', {'date-fin': phase.date-fin}) }}">edit</a>
+                </td>
+            </tr>
+       {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+       {% endfor %}
+        {% endif %}
+
+        </tbody>
+    </table>
+
+    <a href="{{ path('phase_new') }}">Create new</a>
+{% endblock %}
