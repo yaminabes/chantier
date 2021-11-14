@@ -34,6 +34,11 @@ class Prestataire
      */
     private $taches;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $siret;
+
     public function __construct()
     {
         $this->metiers = new ArrayCollection();
@@ -117,6 +122,18 @@ class Prestataire
     public function __toString()
     {
         return $this->nom;
+    }
+
+    public function getSiret(): ?string
+    {
+        return $this->siret;
+    }
+
+    public function setSiret(string $siret): self
+    {
+        $this->siret = $siret;
+
+        return $this;
     }
 
 

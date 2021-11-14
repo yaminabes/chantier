@@ -19,14 +19,16 @@ class PrestataireType extends AbstractType
             ->add('metiers', EntityType::class, [
                 // looks for choices from this entity
                 'class' => Metier::class,
-
+                'by_reference' => false,
                 // uses the User.username property as the visible option string
                 'choice_label' => 'corps_metier',
 
                 // used to render a select box, check boxes or radios
                  'multiple' => true,
                  'expanded' => true,
+
             ])
+            ->add("siret")
         ;
     }
 

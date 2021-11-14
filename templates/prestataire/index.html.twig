@@ -12,7 +12,9 @@
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
-                <th>actions</th>
+                <th>Siret</th>
+                <th>Actions</th>
+                <th>Metiers</th>
             </tr>
         </thead>
         <tbody>
@@ -20,9 +22,17 @@
             <tr>
                 <td>{{ prestataire.id }}</td>
                 <td>{{ prestataire.nom }}</td>
+                <td>{{ prestataire.siret }}</td>
+
                 <td>
                     <a href="{{ path('prestataire_show', {'id': prestataire.id}) }}">show</a>
                     <a href="{{ path('prestataire_edit', {'id': prestataire.id}) }}">edit</a>
+                </td>
+
+                <td>
+                    {% for metier in prestataire.metiers %}
+                        <li>{{ metier }}</li>
+                    {% endfor %}
                 </td>
             </tr>
         {% else %}
