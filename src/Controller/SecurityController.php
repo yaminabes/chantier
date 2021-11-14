@@ -50,8 +50,14 @@ class SecurityController extends AbstractController
 
     /**
      * @Route("/connexion", name ="security_login")
+     * message="L'utilisateur ou le mot de passe n'est pas reconnu"
      */
     public function login(){
         return $this->render('security/login.html.twig');
     }
+
+    /**
+     * @Route("deconnexion", name="security_logout")
+     */
+    public function logout(){}
 }
