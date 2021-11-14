@@ -70,7 +70,7 @@ class User implements UserInterface
     private $conducteurTraveaux;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Prestataires::class, inversedBy="users")
+     * @ORM\ManyToOne(targetEntity=Prestataire::class, inversedBy="users")
      */
     private $prestataire;
 
@@ -173,12 +173,12 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getPrestataire(): ?Prestataires
+    public function getPrestataire(): ?Prestataire
     {
         return $this->prestataire;
     }
 
-    public function setPrestataire(?Prestataires $prestataire): self
+    public function setPrestataire(?Prestataire $prestataire): self
     {
         $this->prestataire = $prestataire;
 

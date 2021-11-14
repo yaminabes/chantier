@@ -16,6 +16,7 @@ class PrestataireController extends AbstractController
     #[Route('/', name: 'prestataire_index', methods: ['GET'])]
     public function index(PrestataireRepository $prestataireRepository): Response
     {
+        //dd($prestataireRepository->find(1)->getMetiers());
         return $this->render('prestataire/index.html.twig', [
             'prestataires' => $prestataireRepository->findAll(),
         ]);
@@ -29,6 +30,7 @@ class PrestataireController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            //dd($prestataire);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($prestataire);
             $entityManager->flush();
