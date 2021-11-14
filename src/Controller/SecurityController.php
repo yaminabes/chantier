@@ -6,11 +6,14 @@ use App\Entity\User;
 use App\Form\RegistrationType;
 use Doctrine\ORM\EntityManager;
 use Doctrine\Persistence\ObjectManager;
+use Prophecy\Argument\Token\TokenInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Config\Security\FirewallConfig\RememberMe\TokenProviderConfig;
 
 class SecurityController extends AbstractController
 {
@@ -50,14 +53,31 @@ class SecurityController extends AbstractController
 
     /**
      * @Route("/connexion", name ="security_login")
-     * message="L'utilisateur ou le mot de passe n'est pas reconnu"
+     * message=""
      */
     public function login(){
         return $this->render('security/login.html.twig');
     }
 
     /**
-     * @Route("deconnexion", name="security_logout")
+     * @Route("/deconnexion", name="security_logout")
      */
     public function logout(){}
+
+/*
+ * @TODO teste connexion
+    public function onAuthetificationSucess(Request $request, TokenInterface $token, $providerKey){
+        if($targetPath = $this->getTargetPath($request->getSession(), $providerKey)){
+            return new RedirectResponse($targetPath);
+        }
+        return new RedirectResponse($this->urlGenerator->generate('#'));
+    }
+
+
+
+
+{*{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif%}*}
+    */
 }

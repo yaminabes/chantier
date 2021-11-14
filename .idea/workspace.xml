@@ -11,53 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="base de données complète uploadée">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211113174627.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211113191747.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211113221342.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20211114150905.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211109085344.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211109170449.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211110092056.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211110105003.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211110105006.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211110111922.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211110134925.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211111103252.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211111212206.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211111223756.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211111224205.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211111232600.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211111232652.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112083515.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112085404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112085817.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112090011.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112090646.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112095532.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112181255.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112181515.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211112182141.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PrestataireController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PrestataireController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Prestataire.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Prestataire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Prestataires.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211113174627.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211113191747.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211113221342.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PrestataireType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PrestataireType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_conduc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_conduc.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/prestataire/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/prestataire/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/prestataire/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/prestataire/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/registration.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +171,7 @@
   </component>
   <component name="ProjectId" id="20GYAAxuIRASBtkRIkGRZxPP8s8" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">

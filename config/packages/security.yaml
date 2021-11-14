@@ -19,7 +19,6 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            lazy: true
             provider: in_database
 
             form_login:
@@ -28,7 +27,7 @@ security:
 
             logout:
                 path: security_logout
-                target: security_login 
+                target: security_login
 
 
             # activate different ways to authenticate
