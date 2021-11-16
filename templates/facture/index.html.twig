@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Facture index{% endblock %}
+
+{% block body %}
+    <h1>Factures</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for facture in factures %}
+           {#  <tr>
+                <td>{{ facture.id }}</td>
+                <td>
+                    <a href="{{ path('facture_show', {'id': facture.id}) }}">show</a>
+                    <a href="{{ path('facture_edit', {'id': facture.id}) }}">edit</a>
+                </td>
+            </tr>#}
+
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-header">
+                    tete
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ path('facture_show', {'id': facture.id}) }}</h5>
+
+                        <a href="{{ path('facture_show', {'id': facture.id}) }}">show</a>
+                        <a href="{{ path('facture_edit', {'id': facture.id}) }}">edit</a>
+
+                </div>
+            </div>
+
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href=" {{ path('facture_new') }}">Ajouter une facture</a>
+
+    </div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}StatutTache{% endblock %}
+
+{% block body %}
+    <h1>StatutTache</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ statut_tache.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_statut</th>
+                <td>{{ statut_tache.nomStatut }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('statut_tache_index') }}">back to list</a>
+
+    <a href="{{ path('statut_tache_edit', {'id': statut_tache.id}) }}">edit</a>
+
+    {{ include('statut_tache/_delete_form.html.twig') }}
+{% endblock %}

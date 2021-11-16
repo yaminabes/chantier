@@ -194,16 +194,16 @@ class User implements UserInterface
         return $this->roles;
     }
 
-    /**
-     * @param array $roles
-     */
-
-    private $role_user;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $nom;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $role_user;
 
     public function setRoles(array $roles): void
     {

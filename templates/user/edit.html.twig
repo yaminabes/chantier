@@ -24,10 +24,17 @@
     {{ form_row(form.numTel, {'label': 'Numéro de téléphone',
         'attr': {'placeholder': 'Entrez votre numéro de téléphone...', 'class' : 'form-control'}}) }}
 
+    {{ form_row(form.role_user, {'label': 'role_user'}) }}
+    {{ form_row(form.prestataire, {'label': 'prestatatire'}) }}
+    {{ form_row(form.conducteurTraveaux, {'label': 'conducteurTraveaux'}) }}
+    {{ form_row(form.maitreOuvrage, {'label': 'maitreOuvrage'}) }}
+
 
 
 
     <button type="submit" class="btn btn-success">Inscription</button>
     {{ form_end (form)}}
+    <button type="submit" class="btn btn-success">Inscription</button>
+
 
 {% endblock %}

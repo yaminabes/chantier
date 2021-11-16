@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New StockTacheUtilise{% endblock %}
+
+{% block body %}
+    <h1>Create new StockTacheUtilise</h1>
+
+    {{ include('stock_tache_utilise/_form.html.twig') }}
+
+    <a href="{{ path('stock_tache_utilise_index') }}">back to list</a>
+{% endblock %}

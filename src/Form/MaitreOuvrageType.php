@@ -14,19 +14,8 @@ class MaitreOuvrageType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('numeroMatricule')
-            ->add('user', EntityType::class, [
-                // looks for choices from this entity
-                'class' => User::class,
-
-                // uses the User.username property as the visible option string
-                'choice_label' => 'email',
-
-                // used to render a select box, check boxes or radios
-                //'multiple' => true,
-                'expanded' => true,
-            ])
-        ;
+            ->add('prenom')
+            ->add('numeroClient');
     }
 
     public function configureOptions(OptionsResolver $resolver): void

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Propose{% endblock %}
+
+{% block body %}
+    <h1>Propose</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ propose.id }}</td>
+            </tr>
+            <tr>
+                <th>Cout</th>
+                <td>{{ propose.cout }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('propose_index') }}">back to list</a>
+
+    <a href="{{ path('propose_edit', {'id': propose.id}) }}">edit</a>
+
+    {{ include('propose/_delete_form.html.twig') }}
+{% endblock %}

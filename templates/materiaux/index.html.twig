@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Materiaux{% endblock %}
+
+{% block body %}
+    <h1>Materiaux index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_materiaux</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for materiaux in materiauxes %}
+             <tr>
+                <td>{{ materiaux.id }}</td>
+                <td>{{ materiaux.nomMateriaux }}</td>
+                <td>
+                    <a href="{{ path('materiaux_show', {'id': materiaux.id}) }}">show</a>
+                    <a href="{{ path('materiaux_edit', {'id': materiaux.id}) }}">edit</a>
+                </td>
+            </tr>
+
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                <h5>
+                <div class="card-header">{{ materiaux.nomMateriaux }}</div>
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">unité : </p>
+                    <a href="{{ path('materiaux_show', {'id': materiaux.id}) }}" class="btn btn-primary">Voir</a>
+                    <a href="{{ path('materiaux_edit', {'id': materiaux.id}) }}" class="btn btn-primary">Editer</a>
+                </div>
+            </div>
+
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+
+
+<br>
+    <a class="btn btn-primary" href="{{ path('materiaux_new') }}">Ajouter</a>
+{% endblock %}

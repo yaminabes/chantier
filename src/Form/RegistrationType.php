@@ -25,9 +25,9 @@ class RegistrationType extends AbstractType
             ->add('numtel')
             ->add('role_user', ChoiceType::class, [
                 'choices' => [
-                    'Prestataire' => null,
-                    'Maitre d\'ouvrage' => null,
-                    'Conducteur de travaux' => null,
+                    'Prestataire' => "Prestataire",
+                    'Maitre d\'ouvrage' => "Maitre d'ouvrage",
+                    'Conducteur de travaux' => "Conducteur de travaux",
                 ],
                 'multiple' => false,
                 'expanded' => true,
