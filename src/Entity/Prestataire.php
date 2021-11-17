@@ -25,6 +25,11 @@ class Prestataire
     private $nom;
 
     /**
+     * @ORM\OneToMany(targetEntity=User::class, mappedBy="prestataire")
+     */
+    private $users;
+
+    /**
      * @ORM\ManyToMany(targetEntity=Metier::class, mappedBy="prestataires")
      */
     private $metiers;
@@ -41,8 +46,39 @@ class Prestataire
 
     public function __construct()
     {
+        $this->users = new ArrayCollection();
         $this->metiers = new ArrayCollection();
         $this->taches = new ArrayCollection();
+    }
+
+    /**
+     * @return Collection|User[]
+     */
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+
+    public function addUser(User $user): self
+    {
+        if (!$this->users->contains($user)) {
+            $this->users[] = $user;
+            $user->setPrestataire($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUser(User $user): self
+    {
+        if ($this->users->removeElement($user)) {
+            // set the owning side to null (unless already changed)
+            if ($user->getPrestataire() === $this) {
+                $user->setPrestataire(null);
+            }
+        }
+
+        return $this;
     }
 
     public function getId(): ?int

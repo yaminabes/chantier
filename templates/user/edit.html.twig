@@ -25,16 +25,21 @@
         'attr': {'placeholder': 'Entrez votre numéro de téléphone...', 'class' : 'form-control'}}) }}
 
 
-    {{ form_row(form.prestataire, {'label': 'prestatatire'}) }}
-    {{ form_row(form.conducteurTraveaux, {'label': 'conducteurTraveaux'}) }}
-    {{ form_row(form.maitreOuvrage, {'label': 'maitreOuvrage'}) }}
+    {% if user.role_user == "Prestataire" %}
+    {{ form_row(form.prestataire, {'label': 'Prestataire'}) }}
+    {% endif %}
+
+    {% if user.role_user == "Conducteur de travaux" %}
+    {{ form_row(form.conducteurTraveaux, {'label': 'Conducteur de travaux'}) }}
+    {% endif %}
+
+    {% if user.role_user == "Maitre d'ouvrage" %}
+    {{ form_row(form.maitreOuvrage, {'label': 'Maitre d\'ouvrage'}) }}
+    {% endif %}
 
 
-
-
-    <button type="submit" class="btn btn-success">Inscription</button>
-    {{ form_end (form)}}
-    <button type="submit" class="btn btn-success">Inscription</button>
+    <button type="submit" class="btn btn-success">Enregistrer</button>
+    {{ form_end(form, {'render_rest': false}) }}
 
 
 {% endblock %}

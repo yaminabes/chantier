@@ -13,6 +13,8 @@ class ConducteurTravauxType extends AbstractType
     {
         $builder
             ->add('numeroMatricule')
+            ->add('prenom')
+
         ;
     }
 

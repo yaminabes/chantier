@@ -16,6 +16,7 @@ class ConducteurTravauxController extends AbstractController
     #[Route('/', name: 'conducteur_travaux_index', methods: ['GET'])]
     public function index(ConducteurTravauxRepository $conducteurTravauxRepository): Response
     {
+        //dd($conducteurTravauxRepository);
         return $this->render('conducteur_travaux/index.html.twig', [
             'conducteur_travauxes' => $conducteurTravauxRepository->findAll(),
         ]);
