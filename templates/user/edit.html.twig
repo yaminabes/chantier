@@ -3,7 +3,7 @@
 {% block title %}Edit User{% endblock %}
 
 {% block body %}
-    <h1>Edit User</h1>
+    <h1>Modifier l'utilisateur {{ user.nom }} demandant le rôle <span class="text-danger"> {{ user.role_user }}</span></h1>
 {#
     {{ include('user/_form.html.twig', {'button_label': 'Update'}) }}
 
@@ -24,7 +24,7 @@
     {{ form_row(form.numTel, {'label': 'Numéro de téléphone',
         'attr': {'placeholder': 'Entrez votre numéro de téléphone...', 'class' : 'form-control'}}) }}
 
-    {{ form_row(form.role_user, {'label': 'role_user'}) }}
+
     {{ form_row(form.prestataire, {'label': 'prestatatire'}) }}
     {{ form_row(form.conducteurTraveaux, {'label': 'conducteurTraveaux'}) }}
     {{ form_row(form.maitreOuvrage, {'label': 'maitreOuvrage'}) }}
