@@ -24,9 +24,9 @@ class UserType extends AbstractType
             ->add('numTel')
             ->add('roles', ChoiceType::class, [
                 'choices' => [
+                    'Maitre d\'ouvrage' => "ROLE_MAITRE",
                     'Prestataire' => "ROLE_PRESTATAIRE",
-                    'Maitre d\'ouvrage' => "ROLE_CONDUC",
-                    'Conducteur de travaux' => "ROLE_MAITRE",
+                    'Conducteur de travaux' => "ROLE_CONDUC",
 
                 ],
 

@@ -10,25 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="erreur user:edit corrigée">
-      <change afterPath="$PROJECT_DIR$/assets/prestataireFill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/minazin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211117082214.php" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20211117104251.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211116092947.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211116093013.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211117073442.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Phase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Phase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/TacheType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TacheType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header_conduc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_conduc.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +27,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -186,6 +168,7 @@
   </component>
   <component name="ProjectId" id="20GYAAxuIRASBtkRIkGRZxPP8s8" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -196,15 +179,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/styles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/styles" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Controller/typeChantier" />
     </key>
@@ -230,9 +210,7 @@
       <workItem from="1636443286084" duration="21083000" />
       <workItem from="1636556989091" duration="5938000" />
       <workItem from="1636734232402" duration="10716000" />
-      <workItem from="1636824700428" duration="11939000" />
-      <workItem from="1637047380293" duration="613000" />
-      <workItem from="1637133825087" duration="10165000" />
+      <workItem from="1636824700428" duration="11661000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
@@ -276,21 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636752112648</updated>
     </task>
-    <task id="LOCAL-00007" summary="prestaire lié aux metiers en bdd + cruds">
-      <created>1636902080403</created>
+    <task id="LOCAL-00007" summary="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;">
+      <created>1636908035386</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1636902080403</updated>
+      <updated>1636908035386</updated>
     </task>
-    <task id="LOCAL-00008" summary="erreur user:edit corrigée">
-      <created>1637135162253</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1637135162253</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,79 +287,8 @@
     <MESSAGE value="inscription avec influence bdd" />
     <MESSAGE value="ajout d'adresse et numero de tel dans le template et le form" />
     <MESSAGE value="base de données complète uploadée" />
-    <MESSAGE value="prestaire lié aux metiers en bdd + cruds" />
-    <MESSAGE value="erreur user:edit corrigée" />
-    <option name="LAST_COMMIT_MESSAGE" value="erreur user:edit corrigée" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="292" y="406" width="1397" height="301" key="#SQL_Dialects" timestamp="1636741244728">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="292" y="406" width="1397" height="301" key="#SQL_Dialects/72.27.1848.1053@72.27.1848.1053" timestamp="1636741244728" />
-    <state x="701" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636478309500">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="701" y="355" width="579" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1636478309500" />
-    <state x="785" y="234" width="412" height="652" key="#com.intellij.ide.util.MemberChooser" timestamp="1636734447966">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="785" y="234" width="412" height="652" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1636734447966" />
-    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1636840232266">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636840232266" />
-    <state x="773" y="315" width="424" height="491" key="FileChooserDialogImpl" timestamp="1636741243788">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="773" y="315" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1636741243788" />
-    <state x="252" y="117" width="1478" height="879" key="MergeDialog" timestamp="1637143546834">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="252" y="117" width="1478" height="879" key="MergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637143546834" />
-    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1636539763636">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636539763636" />
-    <state x="718" y="273" width="545" height="568" key="NewPhpClassDialog" timestamp="1636841645220">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="718" y="273" width="545" height="568" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636841645220" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1636473639644">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636473639644" />
-    <state x="658" y="237" width="666" height="640" key="RollbackChangesDialog" timestamp="1636741286882">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="658" y="237" width="666" height="640" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636741286882" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637135169356">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637135169356" />
-    <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1636841873678">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636841873678" />
-    <state x="734" y="175" width="514" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637137863336">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="734" y="175" width="514" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637137863336" />
-    <state x="777" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1637143537676">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="777" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637143537676" />
-    <state x="687" y="292" width="742" height="522" key="find.popup" timestamp="1637047707964">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="687" y="292" width="742" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637047707964" />
-    <state x="660" y="252" key="run.anything.popup" timestamp="1636541657932">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1636541657932" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1636832400786">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1636832400786" />
+    <MESSAGE value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
