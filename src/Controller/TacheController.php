@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Prestataire;
 use App\Entity\Tache;
 use App\Form\TacheType;
 use App\Repository\TacheRepository;
@@ -24,12 +25,15 @@ class TacheController extends AbstractController
     #[Route('/new', name: 'tache_new', methods: ['GET','POST'])]
     public function new(Request $request): Response
     {
+        $entityManager = $this->getDoctrine()->getManager();
+        $prestataires = $entityManager->getRepository(Prestataire::class)->findAll();
+
         $tache = new Tache();
         $form = $this->createForm(TacheType::class, $tache);
         $form->handleRequest($request);
-
+        //dd($form);
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
+            //dd($tache);
             $entityManager->persist($tache);
             $entityManager->flush();
 
@@ -39,6 +43,7 @@ class TacheController extends AbstractController
         return $this->renderForm('tache/new.html.twig', [
             'tache' => $tache,
             'form' => $form,
+            'prestataires'=> $prestataires
         ]);
     }
 

@@ -10,25 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="erreur user:edit corrigée">
-      <change afterPath="$PROJECT_DIR$/assets/prestataireFill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/minazin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211117082214.php" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="erreur user:edit corrigéeee">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211116092947.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211116093013.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211117073442.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Phase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Phase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/TacheType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/TacheType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/prestataireFill.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/prestataireFill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TacheController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TacheController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tache/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/edit.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +218,7 @@
       <workItem from="1636734232402" duration="10716000" />
       <workItem from="1636824700428" duration="11939000" />
       <workItem from="1637047380293" duration="613000" />
-      <workItem from="1637133825087" duration="10165000" />
+      <workItem from="1637133825087" duration="13050000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
@@ -290,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637135162253</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="erreur user:edit corrigéeee">
+      <created>1637145662503</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637145662503</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +311,8 @@
     <MESSAGE value="base de données complète uploadée" />
     <MESSAGE value="prestaire lié aux metiers en bdd + cruds" />
     <MESSAGE value="erreur user:edit corrigée" />
-    <option name="LAST_COMMIT_MESSAGE" value="erreur user:edit corrigée" />
+    <MESSAGE value="erreur user:edit corrigéeee" />
+    <option name="LAST_COMMIT_MESSAGE" value="erreur user:edit corrigéeee" />
   </component>
   <component name="WindowStateProjectService">
     <state x="292" y="406" width="1397" height="301" key="#SQL_Dialects" timestamp="1636741244728">
@@ -361,10 +355,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="658" y="237" width="666" height="640" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636741286882" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637135169356">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637145668313">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637135169356" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637145668313" />
     <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1636841873678">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
