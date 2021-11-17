@@ -10,11 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_conduc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_conduc.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -264,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637146223962</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="barre de navbar quand conducteur de travaux">
+      <created>1637146707581</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637146707581</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +294,8 @@
     <MESSAGE value="ajout d'adresse et numero de tel dans le template et le form" />
     <MESSAGE value="base de données complète uploadée" />
     <MESSAGE value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
+    <MESSAGE value="barre de navbar quand conducteur de travaux" />
+    <option name="LAST_COMMIT_MESSAGE" value="barre de navbar quand conducteur de travaux" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
