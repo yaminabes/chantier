@@ -16,12 +16,6 @@
 
     </head>
     <body>
-    {{include("header_conduc.html.twig")}}
-
-    {% if is_granted('ROLE_CONDUC') %}
-        {{include("header_conduc.html.twig")}}
-        <p>dsfdfdsf</p>irjsifjiosefpsf
-    {%endif%}
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -72,8 +66,13 @@
                     </form>
                 </div>
             </div>
+
         </nav>
 
+        {% if is_granted('ROLE_CONDUC') %}
+            {{include("header_conduc.html.twig")}}
+
+        {%endif%}
 
 
         {% block body %}

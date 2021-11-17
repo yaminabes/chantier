@@ -27,7 +27,6 @@ class UserType extends AbstractType
                     'Maitre d\'ouvrage' => "ROLE_MAITRE",
                     'Prestataire' => "ROLE_PRESTATAIRE",
                     'Conducteur de travaux' => "ROLE_CONDUC",
-
                 ],
 
                 'multiple' => true,
