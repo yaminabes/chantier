@@ -8,6 +8,8 @@
 // any CSS you import will output into a single css file (app.scss in this case)
 
 import * as bootstrap from 'bootstrap';
+import jquery from 'jquery';
+const $ = require('jquery');
 import { Tooltip, Toast, Popover } from 'bootstrap';
 import './styles/app.scss';
 // start the Stimulus application

@@ -56,15 +56,18 @@ class Tache
     private $stockTacheUtilises;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Phase::class, inversedBy="taches")
+     * @ORM\ManyToMany(targetEntity=Phase::class, inversedBy="taches")
      */
     private $phase;
+
+
 
     public function __construct()
     {
         $this->taches = new ArrayCollection();
         $this->materiauxNecessaires = new ArrayCollection();
         $this->stockTacheUtilises = new ArrayCollection();
+        $this->phase = new ArrayCollection();
 
     }
 
@@ -195,17 +198,31 @@ class Tache
         return $this;
     }
 
-    public function getPhase(): ?Phase
+    /**
+     * @return Collection|Phase[]
+     */
+    public function getPhase(): Collection
     {
         return $this->phase;
     }
 
-    public function setPhase(?Phase $phase): self
+    public function addPhase(Phase $phase): self
     {
-        $this->phase = $phase;
+        if (!$this->phase->contains($phase)) {
+            $this->phase[] = $phase;
+        }
 
         return $this;
     }
+
+    public function removePhase(Phase $phase): self
+    {
+        $this->phase->removeElement($phase);
+
+        return $this;
+    }
+
+
 
 
 

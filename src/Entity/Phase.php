@@ -35,20 +35,22 @@ class Phase
     private $dateFin;
 
 
-    /**
-     * @ORM\OneToMany(targetEntity=Tache::class, mappedBy="phase")
-     */
-    private $taches;
+
 
     /**
      * @ORM\ManyToMany(targetEntity=Chantier::class, inversedBy="phases")
      */
     private $chantier;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Tache::class, mappedBy="phase")
+     */
+    private $taches;
+
     public function __construct()
     {
-        $this->taches = new ArrayCollection();
         $this->chantier = new ArrayCollection();
+        $this->taches = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -94,35 +96,8 @@ class Phase
 
 
 
-    /**
-     * @return Collection|Tache[]
-     */
-    public function getTaches(): Collection
-    {
-        return $this->taches;
-    }
 
-    public function addTach(Tache $tach): self
-    {
-        if (!$this->taches->contains($tach)) {
-            $this->taches[] = $tach;
-            $tach->setPhase($this);
-        }
 
-        return $this;
-    }
-
-    public function removeTach(Tache $tach): self
-    {
-        if ($this->taches->removeElement($tach)) {
-            // set the owning side to null (unless already changed)
-            if ($tach->getPhase() === $this) {
-                $tach->setPhase(null);
-            }
-        }
-
-        return $this;
-    }
 
     /**
      * @return Collection|Chantier[]
@@ -144,6 +119,33 @@ class Phase
     public function removeChantier(Chantier $chantier): self
     {
         $this->chantier->removeElement($chantier);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Tache[]
+     */
+    public function getTaches(): Collection
+    {
+        return $this->taches;
+    }
+
+    public function addTach(Tache $tach): self
+    {
+        if (!$this->taches->contains($tach)) {
+            $this->taches[] = $tach;
+            $tach->addPhase($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTach(Tache $tach): self
+    {
+        if ($this->taches->removeElement($tach)) {
+            $tach->removePhase($this);
+        }
 
         return $this;
     }

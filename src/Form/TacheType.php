@@ -15,9 +15,8 @@ class TacheType extends AbstractType
             ->add('nom_tache')
             ->add('tarif_prestation')
             ->add('StatutTache')
-            ->add('prestataire')
             ->add('metier')
-            ->add('phase')
+            ->add('prestataire')
         ;
     }
 
