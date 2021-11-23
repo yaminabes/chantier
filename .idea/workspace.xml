@@ -11,33 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liste.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211118221440.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211119200611.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211123132633.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/chantier/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/chantier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chantier.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2021_11_47_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2021_11_47__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ChantierFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ChantierFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/PhaseFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PhaseFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/PrestataireFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PrestataireFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Prestataire.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Prestataire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chantier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chantier/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/registration.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +237,7 @@
       <workItem from="1637274549173" duration="13131000" />
       <workItem from="1637607451198" duration="906000" />
       <workItem from="1637651584518" duration="367000" />
-      <workItem from="1637652973958" duration="15511000" />
+      <workItem from="1637652973958" duration="16979000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
@@ -321,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637261580450</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="only styles : pages co, deco et chantier">
+      <created>1637686759152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637686759152</updated>
+    </task>
+    <task id="LOCAL-00010" summary="only styles : pages co, deco et chantier">
+      <created>1637686809589</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637686809589</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +336,8 @@
     <MESSAGE value="ajout d'adresse et numero de tel dans le template et le form" />
     <MESSAGE value="base de données complète uploadée" />
     <MESSAGE value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
+    <MESSAGE value="only styles : pages co, deco et chantier" />
+    <option name="LAST_COMMIT_MESSAGE" value="only styles : pages co, deco et chantier" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
