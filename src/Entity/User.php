@@ -18,7 +18,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *     message= "L'Email indiqué est déjà utilisé !"
  * )
  */
-class User implements UserInterface
+class User //implements UserInterface
 {
     /**
      * @ORM\Id
@@ -194,7 +194,6 @@ class User implements UserInterface
         return $this->roles;
     }
 
-
     /**
      * @ORM\Column(type="string", length=255)
      */
@@ -221,7 +220,6 @@ class User implements UserInterface
 
         return $this;
     }
-
 
     public function eraseCredentials()
     {
