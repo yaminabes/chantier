@@ -12,6 +12,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Facture
 {
+    public function __toString()
+    {
+        return $this->fournisseur;
+    }
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -67,6 +71,8 @@ class Facture
 
         return $this;
     }
+
+
 
     /**
      * @return Collection|Commande[]

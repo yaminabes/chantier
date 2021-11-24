@@ -19,6 +19,7 @@ class Commande
 
     /**
      * @ORM\Column(type="float")
+     *
      */
     private $quantite;
 

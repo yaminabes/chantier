@@ -1,11 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Commande{% endblock %}
+{% block title %}COMMANDE{% endblock %}
 
 {% block body %}
-    <h1>Create new Commande</h1>
 
-    {{ include('commande/_form.html.twig') }}
+    <br>
+    <h1 class="text-center">Nouvelle commande</h1>
+    <br>
 
-    <a href="{{ path('commande_index') }}">back to list</a>
+<table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+    <thead>
+    <tr class="thead-dark ">
+        <th scope="col">
+            {{ include('commande/_form.html.twig') }}
+
+            <button type="button" class="btn btn-outline-primary"><a href="{{ path('commande_index') }}">Retour à la liste</a></button>
+        </th>
+    </tr>
+    </thead>
+</table>
+
 {% endblock %}
