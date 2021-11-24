@@ -10,12 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="fixed bugs">
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="stock mis a jour">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MetierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MetierController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/metier/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/metier/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/propose/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/propose/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Stock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637764886485</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="stock mis a jour">
+      <created>1637766653090</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1637766653090</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,13 +401,14 @@
     <MESSAGE value="fixed bug prestataire fixtures" />
     <MESSAGE value="added some toString" />
     <MESSAGE value="fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs" />
+    <MESSAGE value="stock mis a jour" />
+    <option name="LAST_COMMIT_MESSAGE" value="stock mis a jour" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser" timestamp="1637762217261">
+    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser" timestamp="1637767462077">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637762217261" />
+    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637767462077" />
     <state x="72" y="117" width="1848" height="879" key="MergeDialog" timestamp="1637766465066">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -410,10 +417,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637752721064" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637764903436">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637766659023">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637764903436" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637766659023" />
     <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637743834475">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

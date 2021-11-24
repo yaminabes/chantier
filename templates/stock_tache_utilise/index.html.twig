@@ -1,21 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}StockTacheUtilise index{% endblock %}
+{% block title %}Stock utilisé par tâche{% endblock %}
 
 {% block body %}
-    <h1>StockTacheUtilise index</h1>
+
+    <h1>Stock utilisé par tâche</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>actions</th>
+                <th>Stock de base</th>
+                <th>Quantité utilisée</th>
+                <th>Tâche utilisatrice</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for stock_tache_utilise in stock_tache_utilises %}
             <tr>
                 <td>{{ stock_tache_utilise.id }}</td>
+                <td>{{ stock_tache_utilise.stock }}</td>
+                <td>{{ stock_tache_utilise.quantite }}</td>
+                <td>{{ stock_tache_utilise.tache }}</td>
                 <td>
                     <a href="{{ path('stock_tache_utilise_show', {'id': stock_tache_utilise.id}) }}">show</a>
                     <a href="{{ path('stock_tache_utilise_edit', {'id': stock_tache_utilise.id}) }}">edit</a>
