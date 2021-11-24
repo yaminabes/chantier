@@ -14,6 +14,7 @@ class StockTacheUtiliseType extends AbstractType
         $builder
             ->add('stock')
             ->add('tache')
+            ->add('quantite')
         ;
     }
 
