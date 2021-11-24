@@ -174,5 +174,4 @@ class Prestataire
         return $this;
     }
 
-
 }

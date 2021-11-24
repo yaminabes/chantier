@@ -11,7 +11,7 @@ class StatutFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        //$statuts = $manager->getRepository(Statut::class)->findAll();
+
 
         $statuss = array('En cours', 'Suspendu', 'Terminer', 'Valider');
         foreach ($statuss as $i => $statu) {
