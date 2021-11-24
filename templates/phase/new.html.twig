@@ -4,8 +4,22 @@
 
 {% block body %}
     <h1>Create new Phase</h1>
+    <div class="container ">
+        <div class="col-6 mx-auto">
+            {{ form_start(form) }}
 
-    {{ include('phase/_form.html.twig') }}
+            {{ form_row(form.nomPhase, {'label': 'Nom de la phase',
+                'attr': {'placeholder': 'Nom de la phase' , 'class' : 'form-control'}}) }}
+            {{ form_row(form.dateDebut, {'label': 'Date de début ',
+                'attr': {'placeholder': 'Nom d\'utilisateur ...', 'class' : 'form-control'}}) }}
+            {{ form_row(form.dateFin, {'label': 'Date de fin prévisionnelle',
+                'attr': {'placeholder': 'Adresse email ...', 'class' : 'form-control'}}) }}
+            <button class="btn btn-success">Enregister</button>
 
-    <a href="{{ path('phase_index') }}">back to list</a>
+            {{ form_end (form)}}
+            <a href="{{ path('phase_index') }}">back to list</a>
+        </div>
+
+    </div>
+
 {% endblock %}

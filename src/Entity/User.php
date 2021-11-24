@@ -18,7 +18,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *     message= "L'Email indiqué est déjà utilisé !"
  * )
  */
-class User //implements UserInterface
+class User implements \Symfony\Component\Security\Core\User\UserInterface //implements UserInterface
 {
     /**
      * @ORM\Id

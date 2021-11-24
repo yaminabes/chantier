@@ -10,7 +10,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment=".idea dans gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211115130847.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211117225613.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211117225748.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211118101653.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211118184947.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211118221440.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211119200611.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211123132633.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TacheController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TacheController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Prestataire.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Prestataire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Statut.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Statut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PhaseType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PhaseType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/phase/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/phase/new.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637686809589</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".idea dans gitignore">
+      <created>1637742519826</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637742519826</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +360,26 @@
     <MESSAGE value="base de données complète uploadée" />
     <MESSAGE value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
     <MESSAGE value="only styles : pages co, deco et chantier" />
-    <option name="LAST_COMMIT_MESSAGE" value="only styles : pages co, deco et chantier" />
+    <MESSAGE value=".idea dans gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea dans gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="785" y="234" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1637742697377">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="785" y="234" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637742697377" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637742528144">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637742528144" />
+    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637743834475">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637743834475" />
+    <state x="687" y="292" width="744" height="522" key="find.popup" timestamp="1637742367548">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="687" y="292" width="744" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637742367548" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

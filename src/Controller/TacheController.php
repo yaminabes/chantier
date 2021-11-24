@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Tache;
 use App\Form\Tache1Type;
+use App\Repository\StatutRepository;
 use App\Repository\TacheRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,8 +17,12 @@ class TacheController extends AbstractController
     #[Route('/', name: 'tache_index', methods: ['GET'])]
     public function index(TacheRepository $tacheRepository): Response
     {
+        $manager  = $this->getDoctrine()->getRepository(StatutRepository::class);
+        $statuts = $manager->findAll();
+        dd($statuts);
         return $this->render('tache/index.html.twig', [
             'taches' => $tacheRepository->findAll(),
+            'statuts' => $statuts,
         ]);
     }
 

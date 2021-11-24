@@ -24,10 +24,7 @@ class Prestataire
      */
     private $nom;
 
-    /**
-    * @ORM\Column(type="string", length=255)
-    */
-    private $prenom;
+
 
     /**
      * @ORM\OneToMany(targetEntity=User::class, mappedBy="prestataire")
