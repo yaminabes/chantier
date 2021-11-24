@@ -1,13 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Chantier{% endblock %}
+{% block title %}Modification de chantier{% endblock %}
 
 {% block body %}
-    <h1>Edit Chantier</h1>
+    <br>
+    <h1 class="text-center">Modification de chantier</h1>
+    <br>
 
-    {{ include('chantier/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('chantier_index') }}">back to list</a>
 
-    {{ include('chantier/_delete_form.html.twig') }}
+<table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+    <thead class="thead-dark ">
+    <tr>
+        <th scope="col">{{ include('chantier/_form.html.twig', {'button_label': 'Update'}) }}</th>
+    </tr>
+    </thead>
+</table>
+
+    <a href="{{ path('chantier_index') }}">Retourner à la liste</a>
+
+
+
+    <div style="margin-left: 100px">
+        {{ include('chantier/_delete_form.html.twig') }}
+    </div>
 {% endblock %}

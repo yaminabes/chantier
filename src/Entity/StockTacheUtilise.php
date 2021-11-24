@@ -27,6 +27,11 @@ class StockTacheUtilise
      */
     private $tache;
 
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $quantite;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -52,6 +57,18 @@ class StockTacheUtilise
     public function setTache(?Tache $tache): self
     {
         $this->tache = $tache;
+
+        return $this;
+    }
+
+    public function getQuantite(): ?float
+    {
+        return $this->quantite;
+    }
+
+    public function setQuantite(float $quantite): self
+    {
+        $this->quantite = $quantite;
 
         return $this;
     }
