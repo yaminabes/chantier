@@ -10,9 +10,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="added some toString">
-      <change beforePath="$PROJECT_DIR$/src/Entity/Fournisseur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Fournisseur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Materiaux.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Materiaux.php" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/commande/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/facture/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facture/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fournisseur/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/materiaux/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/materiaux/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/metier/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/metier/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/phase/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/phase/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/propose/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/propose/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/statut/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/statut_tache/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut_tache/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tache/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type_batiment/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/type_batiment/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/unite/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/unite/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,28 +348,7 @@
       <option name="project" value="LOCAL" />
       <updated>1637746095950</updated>
     </task>
-    <task id="LOCAL-00013" summary="fix some bugs">
-      <created>1637746249384</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1637746249384</updated>
-    </task>
-    <task id="LOCAL-00014" summary="fixed bug prestataire fixtures">
-      <created>1637747215021</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1637747215021</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added some toString">
-      <created>1637752272777</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1637752272777</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,27 +378,7 @@
     <MESSAGE value="only styles : pages co, deco et chantier" />
     <MESSAGE value=".idea dans gitignore" />
     <MESSAGE value="fix some bugs" />
-    <MESSAGE value="fixed bug prestataire fixtures" />
-    <MESSAGE value="added some toString" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some toString" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="785" y="234" width="412" height="652" key="#com.intellij.ide.util.MemberChooser" timestamp="1637752530601">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="785" y="234" width="412" height="652" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637752530601" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637752284460">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637752284460" />
-    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637743834475">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637743834475" />
-    <state x="687" y="292" width="744" height="522" key="find.popup" timestamp="1637742367548">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="687" y="292" width="744" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637742367548" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some bugs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
