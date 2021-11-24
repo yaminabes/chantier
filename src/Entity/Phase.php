@@ -3,15 +3,28 @@
 namespace App\Entity;
 
 use App\Repository\PhaseRepository;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 
 /**
  * @ORM\Entity(repositoryClass=PhaseRepository::class)
  */
 class Phase
 {
+    /**
+     * @Assert\Callback
+     */
+    public function validate(ExecutionContextInterface $context, $payload)
+    {
+        if ($this->getDateFin() <= $this->getDateDebut()) {
+            $context->buildViolation('La date de fin ne peut pas être inférieur à la date de début')
+                ->atPath('dateFin')
+                ->addViolation();
+        }
+    }
     /**
      * @ORM\Id
      * @ORM\GeneratedValue

@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Commande;
+use App\Entity\Materiaux;
 use App\Form\CommandeType;
 use App\Repository\CommandeRepository;
+use App\Repository\MateriauxRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,8 +19,14 @@ class CommandeController extends AbstractController
 
     public function index(CommandeRepository $commandeRepository): Response
     {
+        $materiaux = $this->getDoctrine()
+            ->getRepository(Materiaux::class)
+            ->findAll()
+        ;
+        //dd( $commandeRepository->findAll());
         return $this->render('commande/index.html.twig', [
             'commandes' => $commandeRepository->findAll(),
+            'materiaux' => $materiaux,
         ]);
     }
 

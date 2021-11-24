@@ -4,15 +4,29 @@
 
 {% block body %}
     <h1>Facture</h1>
-
     <table class="table">
         <tbody>
             <tr>
                 <th>Id</th>
                 <td>{{ facture.id }}</td>
             </tr>
+            <tr>
+                <th>Matériaux</th>
+                {% for c in commande %}
+                    <td>{{ c.quantite }} {{ c.materiaux }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th>Conducteur de travaux</th>
+                <td>{{ facture.conducteur_travaux }}</td>
+            </tr>
+            <tr>
+                <th>Fournisseur</th>
+                <td>{{ facture.fournisseur }}</td>
+            </tr>
         </tbody>
     </table>
+
 
     <a href="{{ path('facture_index') }}">back to list</a>
 

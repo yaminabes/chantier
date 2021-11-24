@@ -45,7 +45,10 @@ class FactureController extends AbstractController
     #[Route('/{id}', name: 'facture_show', methods: ['GET'])]
     public function show(Facture $facture): Response
     {
+        //dd($facture->getCommandes()->getValues()[0]);
+        $commande = $facture->getCommandes()->getValues();
         return $this->render('facture/show.html.twig', [
+            'commande' =>$commande,
             'facture' => $facture,
         ]);
     }

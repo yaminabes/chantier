@@ -14,6 +14,7 @@ class FactureType extends AbstractType
         $builder
             ->add('fournisseur')
             ->add('conducteur_travaux')
+            ->add('commandes')
         ;
     }
 

@@ -4,7 +4,7 @@
 
 {% block body %}
     <h1>Metier</h1>
-
+{{ dump(metier) }}
     <table class="table">
         <tbody>
             <tr>
@@ -14,6 +14,14 @@
             <tr>
                 <th>Corps_metier</th>
                 <td>{{ metier.corpsMetier }}</td>
+            </tr>
+            <tr>
+                <th>Prestaires</th>
+                <td>
+                    {% for p in metier.prestataires %}
+                        <li>{{ p }}</li>
+                    {% endfor %}
+                </td>
             </tr>
         </tbody>
     </table>
