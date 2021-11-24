@@ -31,7 +31,7 @@ class Facture
     /**
      * @ORM\ManyToOne(targetEntity=ConducteurTravaux::class, inversedBy="factures")
      */
-    private $conducteur_travaux;
+    public $conducteur_travaux;
 
     /**
      * @ORM\OneToMany(targetEntity=Commande::class, mappedBy="facture")
@@ -103,4 +103,17 @@ class Facture
 
         return $this;
     }
+
+    /**
+     * The __toString method allows a class to decide how it will react when it is converted to a string.
+     *
+     * @return string
+     * @link https://php.net/manual/en/language.oop5.magic.php#language.oop5.magic.tostring
+     */
+    public function __toString()
+    {
+        return $this->getId();
+    }
+
+
 }
