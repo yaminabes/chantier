@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit User{% endblock %}
+{% block title %}Modifier l'utilisateur{% endblock %}
 
 {% block body %}
-    <h1>Modifier l'utilisateur {{ user.nom }} demandant le rôle <span class="text-danger"> {{ user.role_user }}</span></h1>
+    <h3>Modifier l'utilisateur {{ user.nom }} demandant le rôle <span class="text-danger"> {{ user.role_user }}</span></h3>
 {#
     {{ include('user/_form.html.twig', {'button_label': 'Update'}) }}
 
