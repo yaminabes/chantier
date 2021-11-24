@@ -6,6 +6,7 @@ use App\Repository\MetierRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\Nullable;
 
 /**
  * @ORM\Entity(repositoryClass=MetierRepository::class)
@@ -84,6 +85,7 @@ class Metier
     public function __toString()
     {
         return $this->corps_metier;
+
     }
 
     /**
