@@ -1,11 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New ConducteurTravaux{% endblock %}
 
 {% block body %}
-    <h1>Create new ConducteurTravaux</h1>
 
-    {{ include('conducteur_travaux/_form.html.twig') }}
+    <br>
+    <h1 class="text-center">Nouveau conducteur de travaux</h1>
+    <br>
 
-    <a href="{{ path('conducteur_travaux_index') }}">back to list</a>
+
+<table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+    <thead>
+    <tr class="thead-dark ">
+        <th scope="col">
+            {{ include('conducteur_travaux/_form.html.twig') }}
+
+            <button type="button" class="btn btn-outline-primary"><a href="{{ path('conducteur_travaux_index') }}">Retour à la liste</a></button>
+        </th>
+    </tr>
+    </thead>
+</table>
+
 {% endblock %}

@@ -11,15 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/CommandeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CommandeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Commande.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Facture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Facture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chantier/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/commande/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/commande/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/commande/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/commande/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/commande/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637761885354</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Les pages commande sont toutes ok">
+      <created>1637764683146</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637764683146</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +373,8 @@
     <MESSAGE value="fixture: conduc , maitreOuvrage, prestataire , Users" />
     <MESSAGE value="bouttons supp en rouge" />
     <MESSAGE value="Les pages chantier sont toutes ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Les pages chantier sont toutes ok" />
+    <MESSAGE value="Les pages commande sont toutes ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Les pages commande sont toutes ok" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
