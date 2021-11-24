@@ -11,34 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211124162041.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MaitreOuvrageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MaitreOuvrageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StockTacheUtiliseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StockTacheUtiliseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chantier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/commande/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/facture/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facture/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fournisseur/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fournisseur/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fournisseur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fournisseur/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fournisseur/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/registration.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/statut_tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut_tache/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/statut_tache/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut_tache/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637769924436</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Pages stock tach utilisée OK">
+      <created>1637771999979</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1637771999979</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +407,8 @@
     <MESSAGE value="added some toString" />
     <MESSAGE value="fixed bugs" />
     <MESSAGE value="Pages maitre ouvrage OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pages maitre ouvrage OK" />
+    <MESSAGE value="Pages stock tach utilisée OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pages stock tach utilisée OK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

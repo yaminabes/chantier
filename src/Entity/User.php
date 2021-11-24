@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\This;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
@@ -34,9 +35,9 @@ class User  implements UserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="string", nullable=true, length=255)
+     * @ORM\Column(type="string", length=255)
      */
-    private $username;
+    public string $username;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -252,5 +253,8 @@ class User  implements UserInterface
     public function getUsername()
     {
 
+    }
+    public function getUserIdentifier(){
+        return $this->email;
     }
 }
