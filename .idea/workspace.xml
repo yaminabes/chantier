@@ -11,14 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="fixture: conduc , maitreOuvrage, prestataire , Users">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ConducteurTravauxFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ConducteurTravauxFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/FournisseurFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/FournisseurFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/MaitreOuvrageFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/MaitreOuvrageFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/PrestataireFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PrestataireFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/commande/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/facture/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facture/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fournisseur/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/materiaux/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/materiaux/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/metier/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/metier/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/phase/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/phase/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/propose/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/propose/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/statut/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/statut_tache/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut_tache/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tache/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type_batiment/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/type_batiment/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/unite/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/unite/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
