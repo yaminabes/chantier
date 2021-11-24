@@ -16,7 +16,7 @@ class PrestataireFixtures extends Fixture
             $prestataire = new Prestataire();
 
             $prestataire->setNom($faker->lastName);
-            $prestataire->setSiret($faker->companySuffix);
+            $prestataire->setSiret($faker->randomNumber($nbDigits = 8));
 
             $manager->persist($prestataire);
         }

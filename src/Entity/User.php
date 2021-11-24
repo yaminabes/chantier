@@ -18,7 +18,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *     message= "L'Email indiqué est déjà utilisé !"
  * )
  */
-class User implements \Symfony\Component\Security\Core\User\UserInterface //implements UserInterface
+class User  implements UserInterface
 {
     /**
      * @ORM\Id
@@ -34,7 +34,7 @@ class User implements \Symfony\Component\Security\Core\User\UserInterface //impl
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", nullable=true, length=255)
      */
     private $username;
 
@@ -101,7 +101,7 @@ class User implements \Symfony\Component\Security\Core\User\UserInterface //impl
 
         return $this;
     }
-
+/*
     public function getUsername(): ?string
     {
         return $this->username;
@@ -112,7 +112,7 @@ class User implements \Symfony\Component\Security\Core\User\UserInterface //impl
         $this->username = $username;
 
         return $this;
-    }
+    }*/
 
     public function getPassword(): ?string
     {
@@ -244,4 +244,13 @@ class User implements \Symfony\Component\Security\Core\User\UserInterface //impl
     }
 
 
+    /**
+     * @return string
+     *
+     * @deprecated since Symfony 5.3, use getUserIdentifier() instead
+     */
+    public function getUsername()
+    {
+        // TODO: Implement getUsername() method.
+    }
 }

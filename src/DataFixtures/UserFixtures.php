@@ -11,17 +11,23 @@ class UserFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {$faker = Faker\Factory::create('fr_FR');
-        /*for ($i = 0; $i < 5; $i++) {
+        for ($i = 0; $i < 5; $i++) {
             $user = new User();
 
-            $user->setUsername($faker->userName);
-            $user->setEmail($faker->safeEmailDomain);
+            $roles = array("conduc" => "conduc", "maitre" => "maitre", "prestataire" => "prestataire");
+            $rand = array_rand($roles, 1);
+            $role = $roles[$rand];
+            $user->setNom($faker->name);
+            $user->setEmail($faker->freeEmailDomain);
             $user->setPassword($faker->password);
             $user->setAdresse($faker->address);
             $user->setNumTel($faker->phoneNumber);
+            $user->setRoleUser($role);
+
+
 
             $manager->persist($user);
-        }*/
+        }
         $manager->flush();
     }
 
