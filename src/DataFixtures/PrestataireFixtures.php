@@ -15,7 +15,7 @@ class PrestataireFixtures extends Fixture
         for ($i = 0; $i < 5; $i++) {
             $prestataire = new Prestataire();
 
-            $prestataire->setPrenom($faker->lastName);
+            $prestataire->setNom($faker->lastName);
             $prestataire->setSiret($faker->companySuffix);
 
             $manager->persist($prestataire);

@@ -19,19 +19,12 @@
         {% for phase in phases %}
             <tr>
                 <td>{{ phase.id }}</td>
-                <td>{{ phase.nom_phase }}</td>
-                <td>{{ phase.date_debut }}</td>
-                <td>{{ phase.date_fin }}</td>
+                <td>{{ phase.nomPhase }}</td>
+                <td>{{ phase.dateDebut|date("d/m/Y")  }}</td>
+                <td>{{ phase.dateFin|date("d/m/Y")  }}</td>
                 <td>
                     <a href="{{ path('phase_show', {'id': phase.id}) }}">show</a>
                     <a href="{{ path('phase_edit', {'id': phase.id}) }}">edit</a>
-                    <a href="{{ path('phase_show', {'nom_phase': phase.nom_phase}) }}">show</a>
-                    <a href="{{ path('phase_edit', {'nom_phase': phase.nom_phase}) }}">edit</a>
-                    <a href="{{ path('phase_show', {'date-debut': phase.date-debut}) }}">show</a>
-                    <a href="{{ path('phase_edit', {'date-debut': phase.date-debut}) }}">edit</a>
-                    <a href="{{ path('phase_show', {'date-fin': phase.date-fin}) }}">show</a>
-                    <a href="{{ path('phase_edit', {'date-fin': phase.date-fin}) }}">edit</a>
-                </td>
             </tr>
        {% else %}
             <tr>

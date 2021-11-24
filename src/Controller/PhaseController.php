@@ -19,9 +19,9 @@ class PhaseController extends AbstractController
     #[Route('/', name: 'phase_index', methods: ['GET'])]
     public function index (PhaseRepository $phaseRepository): Response
     {
-        //dd($phaseRepository->findAll());
+        ($phaseRepository->findAll());
         return $this->render('phase/index.html.twig', [
-           'phase' => $phaseRepository->findAll(),
+           'phases' => $phaseRepository->findAll(),
         ]);
     }
 
