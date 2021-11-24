@@ -1,11 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New StatutTache{% endblock %}
 
 {% block body %}
-    <h1>Create new StatutTache</h1>
 
-    {{ include('statut_tache/_form.html.twig') }}
+<br>
+<h1 class="text-center">Nouvelle Statut Tache</h1>
+<br>
 
-    <a href="{{ path('statut_tache_index') }}">back to list</a>
+<table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+    <thead>
+    <tr class="thead-dark ">
+        <th scope="col">
+            {{ include('statut_tache/_form.html.twig') }}
+
+            <button type="button" class="btn btn-outline-primary"><a href="{{ path('statut_tache_index') }}">Retour à la liste</a></button>
+
+        </th>
+    </tr>
+    </thead>
+</table>
+
 {% endblock %}

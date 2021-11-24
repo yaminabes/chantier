@@ -16,6 +16,7 @@ class MaitreOuvrageController extends AbstractController
     #[Route('/', name: 'maitre_ouvrage_index', methods: ['GET'])]
     public function index(MaitreOuvrageRepository $maitreOuvrageRepository): Response
     {
+        //dd($maitreOuvrageRepository->findAll());
         return $this->render('maitre_ouvrage/index.html.twig', [
             'maitre_ouvrages' => $maitreOuvrageRepository->findAll(),
         ]);

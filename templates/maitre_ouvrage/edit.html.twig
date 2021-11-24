@@ -1,13 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit MaitreOuvrage{% endblock %}
 
 {% block body %}
-    <h1>Edit MaitreOuvrage</h1>
+<br>
+<h1 class="text-center">Modification du Maitre d'ouvrage</h1>
+<br>
 
-    {{ include('maitre_ouvrage/_form.html.twig', {'button_label': 'Update'}) }}
+<table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+    <thead>
+    <tr class="thead-dark ">
+        <th scope="col">
+            {{ include('maitre_ouvrage/_form.html.twig', {'button_label': 'Enregistrer'}) }}
+            <button type="button" class="btn btn-outline-primary"><a href="{{ path('maitre_ouvrage_index') }}">Retour à la liste</a></button>
 
-    <a href="{{ path('maitre_ouvrage_index') }}">back to list</a>
+            {{ include('maitre_ouvrage/_delete_form.html.twig') }}
+        </th>
+    </tr>
+    </thead>
+</table>
 
-    {{ include('maitre_ouvrage/_delete_form.html.twig') }}
 {% endblock %}

@@ -1,26 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}MaitreOuvrage{% endblock %}
 
 {% block body %}
-    <h1>MaitreOuvrage</h1>
 
-    <table class="table">
+    <br>
+    <h1 class="text-center">{{ maitre_ouvrage.prenom }}{{ maitre_ouvrage.numeroClient }}</h1>
+    <br>
+
+    <table class="table table-bordered align-content-center mx-auto" style="width: 90%">
         <tbody>
-            <tr>
-                <th>Id</th>
+        <tr>
+            <th>Id</th>
                 <td>{{ maitre_ouvrage.id }}</td>
             </tr>
-            <tr>
-                <th>NumeroMatricule</th>
-                <td>{{ maitre_ouvrage.numeroMatricule }}</td>
-            </tr>
+        <tr>
+            <th>Prénom</th>
+            <td>{{ maitre_ouvrage.prenom }}</td>
+        </tr>
+        <tr>
+            <th>Numero Client</th>
+            <td>{{ maitre_ouvrage.numeroClient }}</td>
+        </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('maitre_ouvrage_index') }}">back to list</a>
+    <div style="margin-left: 100px">
 
-    <a href="{{ path('maitre_ouvrage_edit', {'id': maitre_ouvrage.id}) }}">edit</a>
+        <button type="button" class="btn btn-outline-primary"><a href="{{ path('maitre_ouvrage_index') }}">Retour à la liste</a></button>
 
-    {{ include('maitre_ouvrage/_delete_form.html.twig') }}
+        <button type="button" class="btn btn-outline-warning"><a href="{{ path('maitre_ouvrage_edit', {'id': maitre_ouvrage.id}) }}">Modifier</a></button>
+
+        <br><br>
+        {{ include('maitre_ouvrage/_delete_form.html.twig') }}
+    </div>
+
+
 {% endblock %}

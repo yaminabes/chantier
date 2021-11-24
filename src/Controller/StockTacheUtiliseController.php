@@ -16,6 +16,7 @@ class StockTacheUtiliseController extends AbstractController
     #[Route('/', name: 'stock_tache_utilise_index', methods: ['GET'])]
     public function index(StockTacheUtiliseRepository $stockTacheUtiliseRepository): Response
     {
+        //dd($stockTacheUtiliseRepository->findAll());
         return $this->render('stock_tache_utilise/index.html.twig', [
             'stock_tache_utilises' => $stockTacheUtiliseRepository->findAll(),
         ]);

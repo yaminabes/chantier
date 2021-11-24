@@ -1,11 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New StockTacheUtilise{% endblock %}
 
 {% block body %}
-    <h1>Create new StockTacheUtilise</h1>
+<br>
+<h1 class="text-center">Nouvelle Tache Utilisée</h1>
+<br>
 
-    {{ include('stock_tache_utilise/_form.html.twig') }}
+<table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+    <thead>
+    <tr class="thead-dark ">
+        <th scope="col">
+            {{ include('stock_tache_utilise/_form.html.twig') }}
 
-    <a href="{{ path('stock_tache_utilise_index') }}">back to list</a>
+            <button type="button" class="btn btn-outline-primary"><a href="{{ path('stock_tache_utilise_index') }}">Retour à la liste</a></button>
+
+        </th>
+    </tr>
+    </thead>
+</table>
+
 {% endblock %}

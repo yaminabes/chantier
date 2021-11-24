@@ -3,9 +3,6 @@
 
 {% block body %}
 
-    {% if error %}
-        <div>Votre adresse e-mail ou votre mot de passe n’est pas correct(e).</div>
-    {% endif %}
 
     <br><br>
 
@@ -37,6 +34,10 @@
             <div class="card">
                 <div class="card-header">
                     <h3>Connexion</h3>
+                    {% if error %}
+                        <div>Votre adresse e-mail ou votre mot de passe n’est pas correct(e).</div>
+                    {% endif %}
+
                 </div>
 
                 <div class="card-body">

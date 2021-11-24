@@ -1,14 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Fournisseur index{% endblock %}
 
 {% block body %}
-    <h1>Fournisseur index</h1>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
+    <br>
+    <h1 class="text-center">Fournisseur </h1>
+    <br>
+
+
+    <table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+        <thead class="thead-dark ">
+        <tr>
+            <th scope="col">Id</th>
                 <th>Nom_fournisseur</th>
                 <th>Siret</th>
                 <th>actions</th>
@@ -21,17 +24,21 @@
                 <td>{{ fournisseur.nomFournisseur }}</td>
                 <td>{{ fournisseur.siret }}</td>
                 <td>
-                    <a href="{{ path('fournisseur_show', {'id': fournisseur.id}) }}">show</a>
-                    <a href="{{ path('fournisseur_edit', {'id': fournisseur.id}) }}">edit</a>
+                    <button type="button" class="btn btn-outline-primary"><a href="{{ path('fournisseur_show', {'id': fournisseur.id}) }}">Voir</a></button>
+                    <button type="button" class="btn btn-outline-warning"><a href="{{ path('fournisseur_edit', {'id': fournisseur.id}) }}">Modifier</a></button>
+
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="3">Aucune donnée</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('fournisseur_new') }}">Create new</a>
+    <div style="margin-left: 100px">
+        <button type="button" class="btn btn-outline-success mx-auto"><a href="{{ path('fournisseur_new') }}">Ajouter</a></button>
+    </div>
+
 {% endblock %}

@@ -1,14 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}StatutTache{% endblock %}
 
 {% block body %}
-    <h1>StatutTache</h1>
+    <br>
+    <h1 class="text-center">Statut tache : {{ statut_tache.nomStatut }}</h1>
+    <br>
 
-    <table class="table">
+    <table class="table table-bordered align-content-center mx-auto" style="width: 90%">
         <tbody>
-            <tr>
-                <th>Id</th>
+        <tr>
+            <th>Id</th>
                 <td>{{ statut_tache.id }}</td>
             </tr>
             <tr>
@@ -18,9 +19,13 @@
         </tbody>
     </table>
 
-    <a href="{{ path('statut_tache_index') }}">back to list</a>
+    <div style="margin-left: 100px">
 
-    <a href="{{ path('statut_tache_edit', {'id': statut_tache.id}) }}">edit</a>
+        <button type="button" class="btn btn-outline-primary"><a href="{{ path('statut_tache_index') }}">Retour à la liste</a></button>
 
-    {{ include('statut_tache/_delete_form.html.twig') }}
+        <button type="button" class="btn btn-outline-warning"><a href="{{ path('statut_tache_edit', {'id': statut_tache.id}) }}">Modifier</a></button>
+
+        <br><br>
+        {{ include('statut_tache/_delete_form.html.twig') }}
+    </div>
 {% endblock %}

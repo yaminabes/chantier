@@ -10,12 +10,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="fixed bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MetierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MetierController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/metier/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/metier/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/propose/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/propose/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock/index.html.twig" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20211124162041.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MaitreOuvrageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MaitreOuvrageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StockTacheUtiliseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StockTacheUtiliseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/commande/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/facture/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facture/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fournisseur/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fournisseur/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fournisseur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fournisseur/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fournisseur/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/registration.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/statut_tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut_tache/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/statut_tache/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut_tache/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/new.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637764886485</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Pages maitre ouvrage OK">
+      <created>1637769924436</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1637769924436</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,37 +425,8 @@
     <MESSAGE value="fixed bug prestataire fixtures" />
     <MESSAGE value="added some toString" />
     <MESSAGE value="fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser" timestamp="1637762217261">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637762217261" />
-    <state x="72" y="117" width="1848" height="879" key="MergeDialog" timestamp="1637766465066">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="72" y="117" width="1848" height="879" key="MergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637766465066" />
-    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1637752721064">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637752721064" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637764903436">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637764903436" />
-    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637743834475">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637743834475" />
-    <state x="677" y="472" width="744" height="522" key="find.popup" timestamp="1637755068233">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="677" y="472" width="744" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637755068233" />
-    <state x="660" y="252" key="run.anything.popup" timestamp="1637754564496">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637754564496" />
+    <MESSAGE value="Pages maitre ouvrage OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pages maitre ouvrage OK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
