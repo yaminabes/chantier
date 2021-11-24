@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MateriauxNecessaires{% endblock %}
+
+{% block body %}
+    <h1>MateriauxNecessaires</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ materiaux_necessaire.id }}</td>
+            </tr>
+            <tr>
+                <th>Quantite_prevue</th>
+                <td>{{ materiaux_necessaire.quantitePrevue }}</td>
+            </tr>
+            <tr>
+                <th>Quantite_utilisee</th>
+                <td>{{ materiaux_necessaire.quantiteUtilisee }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('materiaux_necessaires_index') }}">back to list</a>
+
+    <a href="{{ path('materiaux_necessaires_edit', {'id': materiaux_necessaire.id}) }}">edit</a>
+
+    {{ include('materiaux_necessaires/_delete_form.html.twig') }}
+{% endblock %}

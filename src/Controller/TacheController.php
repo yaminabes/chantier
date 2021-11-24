@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Statut;
 use App\Entity\Tache;
 use App\Form\Tache1Type;
 use App\Repository\StatutRepository;
@@ -17,12 +18,8 @@ class TacheController extends AbstractController
     #[Route('/', name: 'tache_index', methods: ['GET'])]
     public function index(TacheRepository $tacheRepository): Response
     {
-        $manager  = $this->getDoctrine()->getRepository(StatutRepository::class);
-        $statuts = $manager->findAll();
-        dd($statuts);
         return $this->render('tache/index.html.twig', [
             'taches' => $tacheRepository->findAll(),
-            'statuts' => $statuts,
         ]);
     }
 
@@ -37,8 +34,10 @@ class TacheController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($tache);
             $entityManager->flush();
+            $route = $request->headers->get('referer');
 
-            return $this->redirectToRoute('tache_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirect($route);
+            //return $this->redirectToRoute('tache_index', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('tache/new.html.twig', [
@@ -63,8 +62,10 @@ class TacheController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
+            $route = $request->headers->get('referer');
 
-            return $this->redirectToRoute('tache_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirect($route);
+            //return $this->redirectToRoute('tache_index', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('tache/edit.html.twig', [

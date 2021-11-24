@@ -4,6 +4,7 @@
 
 {% block body %}
     <h1>Tache index</h1>
+    {{ dump(taches) }}
 
     <table class="table">
         <thead>
@@ -11,6 +12,10 @@
                 <th>Id</th>
                 <th>Nom_tache</th>
                 <th>Tarif_prestation</th>
+                <th>Matériaux necessaires</th>
+                <th>prestataire</th>
+                <th>Metier</th>
+                <th>Statut</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -21,8 +26,19 @@
                 <td>{{ tache.nomTache }}</td>
                 <td>{{ tache.tarifPrestation }}</td>
                 <td>
-                    <a href="{{ path('tache_show', {'id': tache.id}) }}">show</a>
-                    <a href="{{ path('tache_edit', {'id': tache.id}) }}">edit</a>
+                    {% for m in tache.materiauxNecessaires  %}
+                        <li>{{ m }}
+                            <a class="btn btn-warning" href="{{ path('materiaux_necessaires_edit', {'id': m.id}) }}">M-A-J</a>
+                        </li>
+                    {% endfor %}
+                    </td>
+                <td>{{ tache.prestataire}}</td>
+                <td>{{ tache.metier }}</td>
+                <td>{{ tache.statut }}</td>
+
+                <td>
+                    <a class="btn btn-primary" href="{{ path('tache_show', {'id': tache.id}) }}">show</a>
+                    <a class="btn btn-warning" href="{{ path('tache_edit', {'id': tache.id}) }}">edit</a>
                 </td>
             </tr>
         {% else %}

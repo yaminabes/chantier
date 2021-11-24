@@ -27,6 +27,7 @@ class Tache1Type extends AbstractType
                 'multiple'=> true,
             ])
             ->add('statut')
+            ->add('materiauxNecessaires')
         ;
     }
 
