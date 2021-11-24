@@ -1,52 +1,42 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Facture index{% endblock %}
 
 {% block body %}
-    <h1>Factures</h1>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
+    <br>
+    <h1 class="text-center">Factures</h1>
+    <br>
+
+
+
         {% for facture in factures %}
-           {#  <tr>
-                <td>{{ facture.id }}</td>
-                <td>
-                    <a href="{{ path('facture_show', {'id': facture.id}) }}">show</a>
-                    <a href="{{ path('facture_edit', {'id': facture.id}) }}">edit</a>
-                </td>
-            </tr>#}
 
-            <div class="card text-center" style="width: 18rem;">
-                <div class="card-header">
-                    tete
+            <div class="card-deck" style="margin-left: 100px">
+                <div class="card text-white bg-secondary mb-3 text-center" style="width: 18rem;">
+                    <div class="card-header">{{facture.id}}
+                    </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Fournisseur : {{facture.fournisseur}}</h5>
+
+                            <button type="button" class="btn btn-outline-primary"><a href="{{ path('facture_show', {'id': facture.id}) }}">Voir</a></button>
+                            <button type="button" class="btn btn-outline-warning"><a href="{{ path('facture_edit', {'id': facture.id}) }}">Modifier</a></button>
+                        </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">{{ path('facture_show', {'id': facture.id}) }}</h5>
 
-                        <a href="{{ path('facture_show', {'id': facture.id}) }}">show</a>
-                        <a href="{{ path('facture_edit', {'id': facture.id}) }}">edit</a>
-
-                </div>
             </div>
-
         {% else %}
             <tr>
-                <td colspan="2">no records found</td>
+                <td colspan="3">Aucune donnée</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a class="btn btn-primary" href=" {{ path('facture_new') }}">Ajouter une facture</a>
+<br>
 
+    <div style="margin-left: 100px">
+        <button type="button" class="btn btn-outline-success mx-auto"><a href="{{ path('facture_new') }}">Ajouter une facture</a></button>
     </div>
-
 
 
 
