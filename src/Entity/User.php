@@ -251,6 +251,6 @@ class User  implements UserInterface
      */
     public function getUsername()
     {
-        // TODO: Implement getUsername() method.
+
     }
 }
