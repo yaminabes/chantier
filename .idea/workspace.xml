@@ -10,26 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="fixture: conduc , maitreOuvrage, prestataire , Users">
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/chantier/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/commande/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/facture/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/facture/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fournisseur/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fournisseur/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maitre_ouvrage/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maitre_ouvrage/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/materiaux/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/materiaux/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/metier/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/metier/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/phase/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/phase/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/prestataire/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/propose/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/propose/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/statut/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/statut_tache/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/statut_tache/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stock_tache_utilise/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock_tache_utilise/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/type_batiment/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/type_batiment/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/unite/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/unite/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chantier/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chantier/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637686809589</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="bouttons supp en rouge">
+      <created>1637756778800</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637756778800</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +356,8 @@
     <MESSAGE value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
     <MESSAGE value="only styles : pages co, deco et chantier" />
     <MESSAGE value="fixture: conduc , maitreOuvrage, prestataire , Users" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixture: conduc , maitreOuvrage, prestataire , Users" />
+    <MESSAGE value="bouttons supp en rouge" />
+    <option name="LAST_COMMIT_MESSAGE" value="bouttons supp en rouge" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

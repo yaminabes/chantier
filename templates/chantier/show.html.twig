@@ -5,22 +5,23 @@
 {% block body %}
 
 
+    <br>
+    <h1 class="text-center">CHANTIER {{ chantier.id }}</h1>
+    <br>
 
-    <h1>Chantier</h1>
-
-    <table class="table">
+    <table class="table table-bordered align-content-center mx-auto" style="width: 90%">
         <tbody>
             <tr>
                 <th>Id</th>
                 <td>{{ chantier.id }}</td>
             </tr>
             <tr>
-                <th>DateDebut</th>
-                <td>{{ chantier.dateDebut ? chantier.dateDebut|date('Y-m-d H:i:s') : '' }}</td>
+                <th>Date de Debut</th>
+                <td>{{ chantier.dateDebut ? chantier.dateDebut|date('d-m-Y H:i:s') : '' }}</td>
             </tr>
             <tr>
-                <th>DateFin</th>
-                <td>{{ chantier.dateFin ? chantier.dateFin|date('Y-m-d H:i:s') : '' }}</td>
+                <th>Date de Fin</th>
+                <td>{{ chantier.dateFin ? chantier.dateFin|date('d-m-Y H:i:s') : '' }}</td>
             </tr>
             <tr>
                 <th>Adresse</th>
@@ -29,10 +30,17 @@
         </tbody>
     </table>
 
-    <a href="{{ path('chantier_index') }}">back to list</a>
+    <div style="margin-left: 100px">
 
-    <a href="{{ path('chantier_edit', {'id': chantier.id}) }}">edit</a>
+        <button type="button" class="btn btn-outline-primary"><a href="{{ path('chantier_index') }}">Retour à la liste</a></button>
 
-    {{ include('chantier/_delete_form.html.twig') }}
+        <button type="button" class="btn btn-outline-warning"><a href="{{ path('chantier_edit', {'id': chantier.id}) }}">Modifier</a></button>
+
+        <button type="button" class="btn btn-outline-success"><a href="{{ path('chantier_new') }}">Ajouter un chantier</a></button>
+<br><br>
+        {{ include('chantier/_delete_form.html.twig') }}
+
+    </div>
+
 
 {% endblock %}

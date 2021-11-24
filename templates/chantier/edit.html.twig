@@ -10,18 +10,19 @@
 
 
 <table class="table table-bordered align-content-center mx-auto" style="width: 90%">
-    <thead class="thead-dark ">
-    <tr>
-        <th scope="col">{{ include('chantier/_form.html.twig', {'button_label': 'Update'}) }}</th>
+    <thead>
+    <tr class="thead-dark ">
+        <th scope="col">
+            {{ include('chantier/_form.html.twig', {'button_label': 'Enregistrer'}) }}
+
+            <button type="button" class="btn btn-outline-primary"><a href="{{ path('chantier_index') }}">Retour à la liste</a></button>
+
+            {{ include('chantier/_delete_form.html.twig') }}
+        </th>
     </tr>
+
     </thead>
 </table>
 
-    <a href="{{ path('chantier_index') }}">Retourner à la liste</a>
 
-
-
-    <div style="margin-left: 100px">
-        {{ include('chantier/_delete_form.html.twig') }}
-    </div>
 {% endblock %}
