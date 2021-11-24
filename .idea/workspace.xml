@@ -10,15 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/commande/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/commande/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/commande/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commande/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/conducteur_travaux/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conducteur_travaux/show.html.twig" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="fixed bugs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MetierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MetierController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/metier/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/metier/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/propose/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/propose/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stock/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stock/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,9 +183,6 @@
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
     </include_path>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="20GYAAxuIRASBtkRIkGRZxPP8s8" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -202,7 +196,6 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/chantier" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -249,7 +242,6 @@
       <workItem from="1637607451198" duration="906000" />
       <workItem from="1637651584518" duration="367000" />
       <workItem from="1637652973958" duration="16979000" />
-      <workItem from="1637745420426" duration="10698000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
@@ -321,28 +313,56 @@
       <option name="project" value="LOCAL" />
       <updated>1637686809589</updated>
     </task>
-    <task id="LOCAL-00011" summary="bouttons supp en rouge">
-      <created>1637756778800</created>
+    <task id="LOCAL-00011" summary=".idea dans gitignore">
+      <created>1637742519826</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1637756778800</updated>
+      <updated>1637742519826</updated>
     </task>
-    <task id="LOCAL-00012" summary="Les pages chantier sont toutes ok">
-      <created>1637761885354</created>
+    <task id="LOCAL-00012" summary="fix some bugs">
+      <created>1637746095950</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1637761885354</updated>
+      <updated>1637746095950</updated>
     </task>
-    <task id="LOCAL-00013" summary="Les pages commande sont toutes ok">
-      <created>1637764683146</created>
+    <task id="LOCAL-00013" summary="fix some bugs">
+      <created>1637746249384</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1637764683146</updated>
+      <updated>1637746249384</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed bug prestataire fixtures">
+      <created>1637747215021</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1637747215021</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added some toString">
+      <created>1637752272777</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1637752272777</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixed bugs">
+      <created>1637752700721</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1637752700721</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed bugs">
+      <created>1637764886485</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1637764886485</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,11 +390,42 @@
     <MESSAGE value="base de données complète uploadée" />
     <MESSAGE value="Co et Déco OK mais manque &quot;message d'erreur lors de Co&quot;" />
     <MESSAGE value="only styles : pages co, deco et chantier" />
-    <MESSAGE value="fixture: conduc , maitreOuvrage, prestataire , Users" />
-    <MESSAGE value="bouttons supp en rouge" />
-    <MESSAGE value="Les pages chantier sont toutes ok" />
-    <MESSAGE value="Les pages commande sont toutes ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Les pages commande sont toutes ok" />
+    <MESSAGE value=".idea dans gitignore" />
+    <MESSAGE value="fix some bugs" />
+    <MESSAGE value="fixed bug prestataire fixtures" />
+    <MESSAGE value="added some toString" />
+    <MESSAGE value="fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bugs" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser" timestamp="1637762217261">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637762217261" />
+    <state x="72" y="117" width="1848" height="879" key="MergeDialog" timestamp="1637766465066">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="72" y="117" width="1848" height="879" key="MergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637766465066" />
+    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1637752721064">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637752721064" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637764903436">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637764903436" />
+    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637743834475">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637743834475" />
+    <state x="677" y="472" width="744" height="522" key="find.popup" timestamp="1637755068233">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="677" y="472" width="744" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637755068233" />
+    <state x="660" y="252" key="run.anything.popup" timestamp="1637754564496">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637754564496" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

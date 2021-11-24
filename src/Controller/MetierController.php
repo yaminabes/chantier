@@ -45,6 +45,7 @@ class MetierController extends AbstractController
     #[Route('/{id}', name: 'metier_show', methods: ['GET'])]
     public function show(Metier $metier): Response
     {
+        
         return $this->render('metier/show.html.twig', [
             'metier' => $metier,
         ]);
