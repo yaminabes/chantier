@@ -10,23 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="Stock tache utilisée mis à jour">
-      <change afterPath="$PROJECT_DIR$/src/Controller/MateriauxNecessairesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/MateriauxNecessairesType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/materiaux_necessaires/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/materiaux_necessaires/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/materiaux_necessaires/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/materiaux_necessaires/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/materiaux_necessaires/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/materiaux_necessaires/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TacheController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TacheController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/MateriauxNecessaires.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MateriauxNecessaires.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/Tache1Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Tache1Type.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/show.html.twig" afterDir="false" />
+    <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,19 +359,19 @@
       <option name="project" value="LOCAL" />
       <updated>1637764886485</updated>
     </task>
-    <task id="LOCAL-00018" summary="stock mis a jour">
-      <created>1637766653090</created>
+    <task id="LOCAL-00018" summary="Pages maitre ouvrage OK">
+      <created>1637769924436</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1637766653090</updated>
+      <updated>1637769924436</updated>
     </task>
-    <task id="LOCAL-00019" summary="Stock tache utilisée mis à jour">
-      <created>1637767874546</created>
+    <task id="LOCAL-00019" summary="Pages stock tach utilisée OK">
+      <created>1637771999979</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1637767874546</updated>
+      <updated>1637771999979</updated>
     </task>
     <option name="localTasksCounter" value="20" />
     <servers />
@@ -420,39 +406,9 @@
     <MESSAGE value="fixed bug prestataire fixtures" />
     <MESSAGE value="added some toString" />
     <MESSAGE value="fixed bugs" />
-    <MESSAGE value="stock mis a jour" />
-    <MESSAGE value="Stock tache utilisée mis à jour" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stock tache utilisée mis à jour" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser" timestamp="1637768940368">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="785" y="234" width="412" height="659" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637768940368" />
-    <state x="72" y="117" width="1848" height="879" key="MergeDialog" timestamp="1637768437471">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="72" y="117" width="1848" height="879" key="MergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637768437471" />
-    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1637752721064">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="627" y="316" width="728" height="482" key="MultipleFileMergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637752721064" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637767885050">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637767885050" />
-    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637743834475">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="475" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1637743834475" />
-    <state x="677" y="472" width="744" height="522" key="find.popup" timestamp="1637755068233">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="677" y="472" width="744" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637755068233" />
-    <state x="660" y="252" key="run.anything.popup" timestamp="1637754564496">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1637754564496" />
+    <MESSAGE value="Pages maitre ouvrage OK" />
+    <MESSAGE value="Pages stock tach utilisée OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pages stock tach utilisée OK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
