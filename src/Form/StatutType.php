@@ -2,12 +2,11 @@
 
 namespace App\Form;
 
-use App\Entity\StatutTache;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class StatutTacheType extends AbstractType
+class StatutType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -19,7 +18,7 @@ class StatutTacheType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class' => StatutTache::class,
+            // Configure your form options here
         ]);
     }
 }

@@ -11,10 +11,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="erreur user:edit corrigéeee">
+      <change afterPath="$PROJECT_DIR$/src/Entity/Statut.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/chantier.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_09_00_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_09_00__Default_Changelist_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_09_15_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_09_15__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_09_40_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_09_40__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_16_13_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2021_16_13__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2021_11_47_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2021_11_47__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/prestataireFill.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/prestataireFill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211117082214.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20211117104251.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StatutTacheController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/TacheController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TacheController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/StatutTache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/StatutTacheType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/TacheType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Tache1Type.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/StatutTacheRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/StatutRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/tache/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tache/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/new.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +189,8 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="20GYAAxuIRASBtkRIkGRZxPP8s8" />
@@ -188,11 +211,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/styles" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Controller/typeChantier" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,6 +242,8 @@
       <workItem from="1636824700428" duration="11939000" />
       <workItem from="1637047380293" duration="613000" />
       <workItem from="1637133825087" duration="13050000" />
+      <workItem from="1637398789053" duration="1137000" />
+      <workItem from="1637738983103" duration="3014000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
@@ -327,6 +352,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="785" y="234" width="412" height="652" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1636734447966" />
+    <state x="72" y="27" width="1223" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1637740161463">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="72" y="27" width="1223" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637740161463" />
     <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1636840232266">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -359,10 +388,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637145668313" />
-    <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1636841873678">
+    <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637740469275">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1636841873678" />
+    <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637740469275" />
     <state x="734" y="175" width="514" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637137863336">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

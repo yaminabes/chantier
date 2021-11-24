@@ -2,9 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Prestataire;
 use App\Entity\Tache;
-use App\Form\TacheType;
+use App\Form\Tache1Type;
 use App\Repository\TacheRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -25,15 +24,12 @@ class TacheController extends AbstractController
     #[Route('/new', name: 'tache_new', methods: ['GET','POST'])]
     public function new(Request $request): Response
     {
-        $entityManager = $this->getDoctrine()->getManager();
-        $prestataires = $entityManager->getRepository(Prestataire::class)->findAll();
-
         $tache = new Tache();
-        $form = $this->createForm(TacheType::class, $tache);
+        $form = $this->createForm(Tache1Type::class, $tache);
         $form->handleRequest($request);
-        //dd($form);
+
         if ($form->isSubmitted() && $form->isValid()) {
-            //dd($tache);
+            $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($tache);
             $entityManager->flush();
 
@@ -43,7 +39,6 @@ class TacheController extends AbstractController
         return $this->renderForm('tache/new.html.twig', [
             'tache' => $tache,
             'form' => $form,
-            'prestataires'=> $prestataires
         ]);
     }
 
@@ -58,7 +53,7 @@ class TacheController extends AbstractController
     #[Route('/{id}/edit', name: 'tache_edit', methods: ['GET','POST'])]
     public function edit(Request $request, Tache $tache): Response
     {
-        $form = $this->createForm(TacheType::class, $tache);
+        $form = $this->createForm(Tache1Type::class, $tache);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

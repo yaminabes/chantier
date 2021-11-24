@@ -29,11 +29,7 @@ class Tache
      */
     private $tarif_prestation;
 
-    /**
-     * @ORM\ManyToOne(targetEntity=Tache::class, inversedBy="taches")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $StatutTache;
+
 
     /**
      * @ORM\OneToMany(targetEntity=MateriauxNecessaires::class, mappedBy="tache")
@@ -59,6 +55,12 @@ class Tache
      * @ORM\ManyToMany(targetEntity=Phase::class, inversedBy="taches")
      */
     private $phase;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Statut::class, inversedBy="taches")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $statut;
 
 
 
@@ -100,17 +102,7 @@ class Tache
         return $this;
     }
 
-    public function getStatutTache(): ?self
-    {
-        return $this->StatutTache;
-    }
-
-    public function setStatutTache(?self $StatutTache): self
-    {
-        $this->StatutTache = $StatutTache;
-
-        return $this;
-    }
+    
 
 
 
@@ -218,6 +210,18 @@ class Tache
     public function removePhase(Phase $phase): self
     {
         $this->phase->removeElement($phase);
+
+        return $this;
+    }
+
+    public function getStatut(): ?Statut
+    {
+        return $this->statut;
+    }
+
+    public function setStatut(?Statut $statut): self
+    {
+        $this->statut = $statut;
 
         return $this;
     }
