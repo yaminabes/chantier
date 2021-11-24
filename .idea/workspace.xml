@@ -11,8 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,14 +373,7 @@
       <option name="project" value="LOCAL" />
       <updated>1637771999979</updated>
     </task>
-    <task id="LOCAL-00020" summary="Connexion et inscription fixed">
-      <created>1637773573638</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1637773573638</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,8 +408,7 @@
     <MESSAGE value="fixed bugs" />
     <MESSAGE value="Pages maitre ouvrage OK" />
     <MESSAGE value="Pages stock tach utilisée OK" />
-    <MESSAGE value="Connexion et inscription fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connexion et inscription fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pages stock tach utilisée OK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
