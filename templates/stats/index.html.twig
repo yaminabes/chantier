@@ -3,7 +3,19 @@
 {% block title %}Hello StatsController!{% endblock %}
 
 {% block body %}
-    <h1>Classement des prestataires par respect des délais</h1>
-    {{ render_chart(chart) }}
-    <p>Un prestataire démarre avec 0 points, s'il est en retard, il perd un point et s'il est en avance, il en gagne 2</p>
+    <div class="row">
+        <div class="col-6 mx-auto">
+            <h1>Classement des prestataires par respect des délais</h1>
+            {{ render_chart(chart) }}
+            <p>Un prestataire démarre avec 0 points, s'il est en retard, il perd un point et s'il est en avance, il en gagne 2</p>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-6 mx-auto">
+        <h1>Stock</h1>
+        {{ render_chart(chartStock) }}
+    </div>
+</div>
+
+
 {% endblock %}

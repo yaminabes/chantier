@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Prestataire;
+use App\Entity\Stock;
 use App\Entity\Tache;
 use Container6wakuBu\getTache1TypeService;
+use phpDocumentor\Reflection\Types\Integer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -46,13 +48,13 @@ class StatsController extends AbstractController
         //dd($retards);
         $labels = [$prestatairesScore];
         $datasets = [$scores];
-
+        //note des prestataires
         $chart = $chartBuilder->createChart(Chart::TYPE_BAR );
         $chart->setData([
             'labels' => $labels[0],
             'datasets' => [
                 [
-                    'label' => 'My First dataset',
+                    'label' => 'Note des préstataires',
                     'backgroundColor' => 'rgb(255, 99, 132)',
                     'borderColor' => 'rgb(255, 99, 132)',
                     'maxBarThickness' => '8',
@@ -61,10 +63,41 @@ class StatsController extends AbstractController
             ],
         ]);
 
-        $chart->setOptions(["scales"=>["beginAtZero"=>true]]);
+        //stock
+        $stock = $this->getDoctrine()->getManager()->getRepository(Stock::class)->findAll();
+
+
+        $labels = [];
+        $datasets = [];
+        foreach($stock as $s){
+            array_push($labels,$s->getMateriaux()->getNomMateriaux());
+           array_push( $datasets , $s->getQuantite());
+        }
+
+        //dd(array_values($datasets));
+
+
+        $chartStock = $chartBuilder->createChart(Chart::TYPE_BAR );
+        $chartStock->setData([
+            'labels' => $labels,
+            'datasets' => [
+                [
+                    'label' => 'Stock actuel',
+                    'backgroundColor' => 'rgb(25, 78, 232)',
+                    'borderColor' => 'rgb(25, 78, 232)',
+                    'maxBarThickness' => '8',
+                    'data' => $datasets,
+                ],
+            ],
+        ]);
+
+        $chartStock->setOptions(["scales"=>["beginAtZero"=>true]]);
         return $this->render('stats/index.html.twig', [
             'chart' => $chart,
+            'chartStock' => $chartStock,
             'taches' => $taches
         ]);
     }
+
+
 }

@@ -38,7 +38,6 @@ class UserType extends AbstractType
                 // looks for choices from this entity
                 'class' => MaitreOuvrage::class,
                 'by_reference' => false,
-                'mapped' => false,
                 // uses the User.username property as the visible option string
                 'choice_label' => 'prenom',
 
@@ -52,7 +51,6 @@ class UserType extends AbstractType
                     // looks for choices from this entity
                     'class' => ConducteurTravaux::class,
                     'by_reference' => false,
-                    'mapped' => false,
                     // uses the User.username property as the visible option string
                     'choice_label' => 'prenom',
 
@@ -65,7 +63,6 @@ class UserType extends AbstractType
                 // looks for choices from this entity
                 'class' => Prestataire::class,
                 'by_reference' => false,
-                'mapped' => false,
                 // uses the User.username property as the visible option string
                 'choice_label' => 'nom',
 

@@ -14,7 +14,7 @@ class PhaseFixtures extends Fixture
         $faker = Faker\Factory::create('fr_FR');
         for ($i = 0; $i < 5; $i++) {
             $phase = new phase();
-            $phase->setNomPhase('nom');
+            $phase->setNomPhase($faker->randomLetter);
             $phase->setDateDebut($faker->dateTime);
             $phase->setDateFin($faker->dateTime);
             $manager->persist($phase);

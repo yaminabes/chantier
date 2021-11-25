@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Stock;
 use App\Entity\StockTacheUtilise;
 use App\Form\StockTacheUtiliseType;
 use App\Repository\StockTacheUtiliseRepository;
@@ -28,9 +29,18 @@ class StockTacheUtiliseController extends AbstractController
         $stockTacheUtilise = new StockTacheUtilise();
         $form = $this->createForm(StockTacheUtiliseType::class, $stockTacheUtilise);
         $form->handleRequest($request);
+        $stockManager = $this->getDoctrine()->getManager()->getRepository(Stock::class);
+        $stocks = $stockManager->findAll();
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
+            foreach($stocks as $s){
+                if($s == $stockTacheUtilise->getStock()){
+                    $quantiteOriginale = $s->getQuantite();
+                    $s->setQuantite($quantiteOriginale - $stockTacheUtilise->getQuantite() );
+                    $entityManager->persist($s);
+                }
+            }
             $entityManager->persist($stockTacheUtilise);
             $entityManager->flush();
 
