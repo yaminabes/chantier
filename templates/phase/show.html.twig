@@ -4,7 +4,7 @@
 
 {% block body %}
     <h1>Phase</h1>
-
+    {{ dump(phase) }}
     <table class="table">
         <tbody>
             <tr>
@@ -12,8 +12,30 @@
                 <td>{{ phase.id }}</td>
             </tr>
             <tr>
-                <th>NomType</th>
-                <td>{{ phase.nomType }}</td>
+                <th>Nom de la phase</th>
+                <td>{{ phase.nomPhase }}</td>
+            </tr>
+            <tr>
+                <th>Date de début</th>
+                <td>{{ phase.dateDebut|date("d/m/Y")   }}</td>
+            </tr>
+            <tr>
+                <th>Date de fin</th>
+                <td>{{ phase.dateFin|date("d/m/Y") }}</td>
+            </tr>
+            <tr>
+                <th>Chantier</th>
+                <td>{% for chantier in phase.chantier %}
+                        <li>{{ chantier }}</li>
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>Taches</th>
+                <td>{% for tache in phase.taches %}
+                        <li>{{ tache }}</li>
+                    {% endfor %}
+                </td>
             </tr>
         </tbody>
     </table>

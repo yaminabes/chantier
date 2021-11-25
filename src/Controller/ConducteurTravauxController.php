@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/conducteur/travaux')]
+#[Route('/conduc/conducteur/travaux')]
 class ConducteurTravauxController extends AbstractController
 {
     #[Route('/', name: 'conducteur_travaux_index', methods: ['GET'])]
@@ -72,7 +72,7 @@ class ConducteurTravauxController extends AbstractController
     #[Route('/{id}', name: 'conducteur_travaux_delete', methods: ['POST'])]
     public function delete(Request $request, ConducteurTravaux $conducteurTravaux): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$conducteurTravaux->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $conducteurTravaux->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($conducteurTravaux);
             $entityManager->flush();
@@ -80,4 +80,6 @@ class ConducteurTravauxController extends AbstractController
 
         return $this->redirectToRoute('conducteur_travaux_index', [], Response::HTTP_SEE_OTHER);
     }
+
+
 }

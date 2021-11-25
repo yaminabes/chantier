@@ -26,9 +26,9 @@
                 <td>{{ tache.nomTache }}</td>
                 <td>{{ tache.tarifPrestation }}</td>
                 <td>
-                    {% for m in tache.materiauxNecessaires  %}
+                    {% for m in tache.stockTacheUtilises  %}
                         <li>{{ m }}
-                            <a class="btn btn-warning" href="{{ path('materiaux_necessaires_edit', {'id': m.id}) }}">M-A-J</a>
+                            <a class="btn btn-warning" href="{{ path('stock_tache_utilise_edit', {'id': m.id}) }}">M-A-J</a>
                         </li>
                     {% endfor %}
                     </td>

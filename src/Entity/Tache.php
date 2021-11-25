@@ -32,7 +32,7 @@ class Tache
 
 
     /**
-     * @ORM\OneToMany(targetEntity=MateriauxNecessaires::class, mappedBy="tache")
+     * @ORM\OneToMany(targetEntity=MateriauxNecessaires::class, mappedBy="tache", cascade={ "remove"})
      */
     private $materiauxNecessaires;
 
@@ -61,6 +61,26 @@ class Tache
      * @ORM\JoinColumn(nullable=false)
      */
     private $statut;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $dateDebut;
+
+    /**
+     * @ORM\Column(type="time")
+     */
+    private $duree;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $dateFin;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $description;
 
 
 
@@ -235,6 +255,54 @@ class Tache
     public function __toString()
     {
         return $this->getNomTache(). " par ".$this->getPrestataire();
+    }
+
+    public function getDateDebut(): ?\DateTimeInterface
+    {
+        return $this->dateDebut;
+    }
+
+    public function setDateDebut(\DateTimeInterface $dateDebut): self
+    {
+        $this->dateDebut = $dateDebut;
+
+        return $this;
+    }
+
+    public function getDuree(): ?\DateTimeInterface
+    {
+        return $this->duree;
+    }
+
+    public function setDuree(\DateTimeInterface $duree): self
+    {
+        $this->duree = $duree;
+
+        return $this;
+    }
+
+    public function getDateFin(): ?\DateTimeInterface
+    {
+        return $this->dateFin;
+    }
+
+    public function setDateFin(?\DateTimeInterface $dateFin): self
+    {
+        $this->dateFin = $dateFin;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(?string $description): self
+    {
+        $this->description = $description;
+
+        return $this;
     }
 
 

@@ -34,7 +34,7 @@ class MateriauxNecessaires
     private $materiaux;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Tache::class, inversedBy="materiauxNecessaires")
+     * @ORM\ManyToOne(targetEntity=Tache::class, inversedBy="materiauxNecessaires",  cascade={ "remove"})
      */
     private $tache;
 

@@ -23,11 +23,11 @@ class Tache1Type extends AbstractType
             [
                 'class' => Phase::class,
                 'choice_label' => 'nomPhase',
-                'mapped' => false,
+                'by_reference' => false,
                 'multiple'=> true,
             ])
             ->add('statut')
-            ->add('materiauxNecessaires')
+            ->add('stockTacheUtilises')
         ;
     }
 
