@@ -268,11 +268,7 @@ class Tache
 
         return $this;
     }
-
-
-
-
-
+    
     public function getDateFin(): ?\DateTimeInterface
     {
         return $this->dateFin;
@@ -308,6 +304,4 @@ class Tache
 
         return $this;
     }
-
-
 }

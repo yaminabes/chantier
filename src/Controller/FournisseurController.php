@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/fournisseur')]
+#[Route('/conduc/fournisseur')]
 class FournisseurController extends AbstractController
 {
     #[Route('/', name: 'fournisseur_index', methods: ['GET'])]

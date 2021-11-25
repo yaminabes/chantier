@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/type/batiment')]
+#[Route('/conduc/type/batiment')]
 class TypeBatimentController extends AbstractController
 {
     #[Route('/', name: 'type_batiment_index', methods: ['GET'])]

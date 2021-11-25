@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/statut')]
+#[Route('/conduc/statut')]
 class StatutController extends AbstractController
 {
     #[Route('/', name: 'statut_index', methods: ['GET'])]

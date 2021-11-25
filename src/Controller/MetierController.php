@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/metier')]
+#[Route('/conduc/metier')]
 class MetierController extends AbstractController
 {
     #[Route('/', name: 'metier_index', methods: ['GET'])]

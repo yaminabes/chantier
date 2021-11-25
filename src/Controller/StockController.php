@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/stock')]
+#[Route('/conduc/stock')]
 class StockController extends AbstractController
 {
     #[Route('/', name: 'stock_index', methods: ['GET'])]

@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/necessaire/materiaux')]
+#[Route('/conduc/necessaire/materiaux')]
 class MateriauxNecessairesController extends AbstractController
 {
     #[Route('', name: 'materiaux_necessaires_index', methods: ['GET'])]

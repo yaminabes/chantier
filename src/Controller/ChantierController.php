@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/chantier')]
+#[Route('/conduc/chantier')]
 class ChantierController extends AbstractController
 {
     #[Route('/', name: 'chantier_index', methods: ['GET'])]

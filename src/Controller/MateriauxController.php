@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/materiaux')]
+#[Route('/conduc/materiaux')]
 class MateriauxController extends AbstractController
 {
     #[Route('/', name: 'materiaux_index', methods: ['GET'])]

@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 
-#[Route('/phase')]
+#[Route('/conduc/phase')]
 class PhaseController extends AbstractController
 {
 

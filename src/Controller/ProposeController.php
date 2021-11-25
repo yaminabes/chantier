@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/propose')]
+#[Route('/conduc/propose')]
 class ProposeController extends AbstractController
 {
     #[Route('/', name: 'propose_index', methods: ['GET'])]

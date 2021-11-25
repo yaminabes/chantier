@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/stock/tache/utilise')]
+#[Route('/conduc/stock/tache/utilise')]
 class StockTacheUtiliseController extends AbstractController
 {
     #[Route('/', name: 'stock_tache_utilise_index', methods: ['GET'])]
