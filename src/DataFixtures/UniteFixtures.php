@@ -12,7 +12,7 @@ class UniteFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $unites = array('Tonne', 'Kilogramme', 'gramme', 'Pieces', 'metre');
-        $faker = Faker\Factory::create('fr_FR');
+       // $faker = Faker\Factory::create('fr_FR');
         foreach ($unites as $i => $uni) {
 
             $unite[$i] = new Unite();
