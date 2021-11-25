@@ -77,6 +77,11 @@ class Tache
      */
     private $description;
 
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $duree;
+
 
 
     public function __construct()
@@ -288,6 +293,18 @@ class Tache
     public function setDescription(?string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getDuree(): ?\DateTimeInterface
+    {
+        return $this->duree;
+    }
+
+    public function setDuree(\DateTimeInterface $duree): self
+    {
+        $this->duree = $duree;
 
         return $this;
     }
