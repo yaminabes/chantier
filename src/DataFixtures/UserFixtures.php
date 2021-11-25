@@ -23,6 +23,7 @@ class UserFixtures extends Fixture
             $user->setAdresse($faker->address);
             $user->setNumTel($faker->phoneNumber);
             $user->setRoleUser($role);
+            $user->username = $faker->userName;
 
 
 

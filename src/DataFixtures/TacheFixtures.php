@@ -35,6 +35,9 @@ class TacheFixtures extends Fixture
             $metier[$i] = new Metier();
             $rand = array_rand($metiers);
             $tache[$i]->setMetier($metiers[$rand]);
+            $tache[$i]->setDateDebut($faker->dateTimeBetween("now", "+2years"));
+            $tache[$i]->setDateFin($faker->dateTimeBetween("+2years", "+3years"));
+            $tache[$i]->setDuree($faker->dateTimeBetween("now", "+4years"));
 
             $manager->persist($tache[$i]);
         }

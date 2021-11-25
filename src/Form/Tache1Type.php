@@ -19,6 +19,9 @@ class Tache1Type extends AbstractType
             ->add('tarif_prestation')
             ->add('prestataire')
             ->add('metier')
+            ->add('dateDebut')
+            ->add('dateFin')
+            ->add('duree')
             ->add('phase', EntityType::class,
             [
                 'class' => Phase::class,

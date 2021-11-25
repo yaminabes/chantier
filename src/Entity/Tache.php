@@ -65,10 +65,7 @@ class Tache
      */
     private $dateDebut;
 
-    /**
-     * @ORM\Column(type="time")
-     */
-    private $duree;
+
 
     /**
      * @ORM\Column(type="datetime", nullable=true)
@@ -267,17 +264,9 @@ class Tache
         return $this;
     }
 
-    public function getDuree(): ?\DateTimeInterface
-    {
-        return $this->duree;
-    }
 
-    public function setDuree(\DateTimeInterface $duree): self
-    {
-        $this->duree = $duree;
 
-        return $this;
-    }
+
 
     public function getDateFin(): ?\DateTimeInterface
     {

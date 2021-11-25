@@ -11,31 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/stats/stats.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/chantier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chantier.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211124152118.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20211124162041.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ConducteurTravauxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConducteurTravauxController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Chantier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Chantier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/ConducteurTravaux.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ConducteurTravaux.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/MateriauxNecessaires.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MateriauxNecessaires.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/StockTacheUtilise.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/StockTacheUtilise.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/TacheFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/TacheFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Tache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ChantierType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ChantierType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PhaseType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PhaseType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/Tache1Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Tache1Type.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/phase/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/phase/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tache/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tache/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,10 +429,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1637778329978" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637773677103">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1637833267306">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637773677103" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1637833267306" />
     <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1637826779314">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
