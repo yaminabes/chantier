@@ -10,9 +10,17 @@ class TypeBatimentFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        // $product = new Product();
-        // $manager->persist($product);
 
+        $typeBatiments = array('Maison traditionel', 'Immeuble', 'Piscine', 'Villa', 'Chalet', 'Entrepot', 'Chateau');
+
+        foreach ($typeBatiments as $i => $typebat) {
+
+            $typeBatiment[$i] = new TypeBatiment();
+            $typeBatiment[$i]->setNomType($typebat);
+
+
+            $manager->persist($typeBatiment[$i]);
+        }
         $manager->flush();
     }
 }

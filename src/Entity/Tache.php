@@ -29,8 +29,6 @@ class Tache
      */
     private $tarif_prestation;
 
-
-
     /**
      * @ORM\OneToMany(targetEntity=MateriauxNecessaires::class, mappedBy="tache", cascade={ "remove"})
      */
