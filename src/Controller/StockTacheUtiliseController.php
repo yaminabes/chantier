@@ -68,6 +68,19 @@ class StockTacheUtiliseController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $stock = $this->getDoctrine()->getManager()->getRepository(Stock::class)->findAll();
+            foreach ($stock as $s){
+                if($s == $stockTacheUtilise->getStock()){
+                    $result = $s->getQuantite();
+                    $result = $result - $stockTacheUtilise->getQuantite();
+                    $s->setQuantite($result);
+                    //dd($result);
+                    $this->getDoctrine()->getManager()->persist($s);
+
+                }
+            }
+            $this->getDoctrine()->getManager()->persist($stockTacheUtilise);
+
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('stock_tache_utilise_index', [], Response::HTTP_SEE_OTHER);
