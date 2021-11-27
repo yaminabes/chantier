@@ -34,43 +34,9 @@ class UserType extends AbstractType
             ])
 
             ->add('nom')
-            ->add('maitreOuvrage', EntityType::class, [
-                // looks for choices from this entity
-                'class' => MaitreOuvrage::class,
-                'by_reference' => false,
-                // uses the User.username property as the visible option string
-                'choice_label' => 'prenom',
-
-                // used to render a select box, check boxes or radios
-                'multiple' => false,
-                'expanded' => false,
-
-            ])
-            ->add('conducteurTraveaux',
-                EntityType::class, [
-                    // looks for choices from this entity
-                    'class' => ConducteurTravaux::class,
-                    'by_reference' => false,
-                    // uses the User.username property as the visible option string
-                    'choice_label' => 'prenom',
-
-                    // used to render a select box, check boxes or radios
-                    'multiple' => false,
-                    'expanded' => false,
-
-                ])
-            ->add('prestataire', EntityType::class, [
-                // looks for choices from this entity
-                'class' => Prestataire::class,
-                'by_reference' => false,
-                // uses the User.username property as the visible option string
-                'choice_label' => 'nom',
-
-                // used to render a select box, check boxes or radios
-                'multiple' => false,
-                'expanded' => false,
-
-            ])
+            ->add('maitreOuvrage')
+            ->add('conducteurTraveaux')
+            ->add('prestataire')
         ;
     }
 

@@ -24,8 +24,8 @@
                 <td>{{ phase.dateDebut|date("d/m/Y")  }}</td>
                 <td>{{ phase.dateFin|date("d/m/Y")  }}</td>
                 <td>
-                    <a href="{{ path('phase_show', {'id': phase.id}) }}">show</a>
-                    <a href="{{ path('phase_edit', {'id': phase.id}) }}">edit</a>
+                    <a class ="btn btn-outline-primary" href="{{ path('phase_show', {'id': phase.id}) }}">Détails</a>
+                    <a class ="btn btn-outline-warning" href="{{ path('phase_edit', {'id': phase.id}) }}">Modifier</a>
             </tr>
        {% else %}
             <tr>
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('phase_new') }}">Create new</a>
+    <a class ="btn btn-outline-success " href="{{ path('phase_new') }}">Create new</a>
 {% endblock %}

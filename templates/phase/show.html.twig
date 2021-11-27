@@ -4,7 +4,6 @@
 
 {% block body %}
     <h1>Phase</h1>
-    {{ dump(phase) }}
     <table class="table">
         <tbody>
             <tr>
@@ -35,6 +34,15 @@
                 <td>{% for tache in phase.taches %}
                         <li>{{ tache }}</li>
                     {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>Statut</th>
+                <td><b>{{ phase.statut }}</b></td>
+                <td>
+                    <form method="post">
+                        <button name="id" value="{{ phase.id }}" class="btn btn-success">Valider</button>
+                    </form>
                 </td>
             </tr>
         </tbody>

@@ -13,7 +13,7 @@ class StatutFixtures extends Fixture
     {
 
 
-        $statuss = array('En cours', 'Suspendu', 'Terminer', 'Valider');
+        $statuss = array('En cours', 'Suspendu', 'Termié', 'Validé');
         foreach ($statuss as $i => $statu) {
             $status[$i] = new Statut();
             $status[$i]->setNomStatut($statu);

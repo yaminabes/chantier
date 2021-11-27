@@ -21,7 +21,7 @@ class ChantierType extends AbstractType
             ->add('phases',EntityType::class,
             [
                 'by_reference' => false,
-                'mapped' => false,
+                'mapped' => true,
                 'class' => Phase::class,
                 'multiple' => true,
                 'expanded' => true,

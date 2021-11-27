@@ -82,6 +82,16 @@ class Tache
      */
     private $duree;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Tache::class, inversedBy="taches")
+     */
+    private $tache_dependante;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Tache::class, mappedBy="tache_dependante")
+     */
+    private $taches;
+
 
 
     public function __construct()
@@ -305,6 +315,48 @@ class Tache
     public function setDuree(\DateTimeInterface $duree): self
     {
         $this->duree = $duree;
+
+        return $this;
+    }
+
+    public function getTacheDependante(): ?self
+    {
+        return $this->tache_dependante;
+    }
+
+    public function setTacheDependante(?self $tache_dependante): self
+    {
+        $this->tache_dependante = $tache_dependante;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|self[]
+     */
+    public function getTaches(): Collection
+    {
+        return $this->taches;
+    }
+
+    public function addTach(self $tach): self
+    {
+        if (!$this->taches->contains($tach)) {
+            $this->taches[] = $tach;
+            $tach->setTacheDependante($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTach(self $tach): self
+    {
+        if ($this->taches->removeElement($tach)) {
+            // set the owning side to null (unless already changed)
+            if ($tach->getTacheDependante() === $this) {
+                $tach->setTacheDependante(null);
+            }
+        }
 
         return $this;
     }
