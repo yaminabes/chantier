@@ -68,14 +68,26 @@
                     </form>
                 </div>
             </div>
-
+{#
+            {{ render(controller(
+                'App\\Controller\\SearchController::searchBar'
+            )) }}
+#}
         </nav>
 
         {% if is_granted('ROLE_CONDUC') %}
+
             {{include("header_conduc.html.twig")}}
 
-        {%endif%}
+        {% elseif is_granted('ROLE_PRESTATAIRE') %}
 
+            {{include("header_prestataire.html.twig")}}
+
+        {% elseif is_granted('ROLE_MAITRE') %}
+
+            {{include("header_maitre.html.twig")}}
+
+        {%endif%}
 
         {% block body %}
 

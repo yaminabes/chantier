@@ -3,23 +3,45 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/chantier">Gestion des chantiers</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ path('security_registration') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Chantier
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/conduc/chantier">Gestion des chantiers</a></li>
+                        <li><a class="dropdown-item" href="/conduc/phase">Phases</a></li>
+                        <li><a class="dropdown-item" href="/conduc/tache">Tâche</a></li>
+                        <li><a class="dropdown-item" href="/conduc/statut/tache">Statut de tâches</a></li>
+
+
+                        {# <li><a class="dropdown-item" href="#">Something else here</a></li> #}
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path("metier_index") }}">Metiers</a>
-                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="{{ path('security_registration') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Gestion des utilisateurs
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{ path('security_registration') }}">Inscriptions</a></li>
-                        <li><a class="dropdown-item" href="{{ path('user_index') }}">Utilisateurs en attente</a></li>
+                        <li><a class="dropdown-item" href="/conduc/user">Utilisateurs</a></li>
                         {# <li><a class="dropdown-item" href="#">Something else here</a></li> #}
                     </ul>
                 </li>
-                <li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ path('security_registration') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Stocks
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/conduc/stock">Stocks</a></li>
+                        <li><a class="dropdown-item" href="/conduc/commande">Commandes</a></li>
+                        <li><a class="dropdown-item" href="/conduc/materiaux">Matériaux</a></li>
+
+                        {# <li><a class="dropdown-item" href="#">Something else here</a></li> #}
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="{{ path('security_registration') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Carnet d'adresse
                     </a>
@@ -27,16 +49,31 @@
                         <li><a class="dropdown-item" href="{{ path('prestataire_index') }}">Prestataires</a></li>
                         <li><a class="dropdown-item" href="{{ path('maitre_ouvrage_index') }}">Maitres d'ouvrage</a></li>
                         <li><a class="dropdown-item" href="{{ path('conducteur_travaux_index') }}">Conducteurs de travaux</a></li>
+                        <li><a class="dropdown-item" href="{{ path('fournisseur_index') }}">Fournisseurs</a></li>
+                        <li><a class="dropdown-item" href="{{ path("metier_index") }}">Metiers</a></li>
                         {# <li><a class="dropdown-item" href="#">Something else here</a></li> #}
                     </ul>
+                </li>
 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ path('security_registration') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Autre
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/conduc/facture">Factures</a></li>
+                        <li><a class="dropdown-item" href="/conduc/stats">Statistiques</a></li>
 
+                        {# <li><a class="dropdown-item" href="#">Something else here</a></li> #}
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Vous êtes Conducteur de travaux</a>
                 </li>
 
             </ul>
+
+
+
             {# <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
