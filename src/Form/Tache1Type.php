@@ -29,6 +29,14 @@ class Tache1Type extends AbstractType
                 'by_reference' => false,
                 'multiple'=> true,
             ])
+            ->add('tache_dependante', EntityType::class,
+                [
+                    'class' => Tache::class,
+                    'by_reference' => false,
+                    'multiple'=> true,
+                ]
+            )
+
             ->add('statut')
             ->add('stockTacheUtilises')
         ;

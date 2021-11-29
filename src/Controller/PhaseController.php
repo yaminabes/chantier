@@ -4,12 +4,14 @@ namespace App\Controller;
 
 
 use App\Entity\Phase;
+use App\Entity\Statut;
 use App\Form\PhaseType;
 use App\Repository\PhaseRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use function Symfony\Component\String\s;
 
 
 #[Route('/conduc/phase')]
@@ -28,6 +30,7 @@ class PhaseController extends AbstractController
     #[Route('/new', name: 'phase_new', methods: ['GET', 'POST'])]
     public function new(Request $request): Response
     {
+
         $phase = new Phase();
         $form = $this->createForm(PhaseType::class, $phase);
         $form->handleRequest($request);
@@ -44,9 +47,32 @@ class PhaseController extends AbstractController
             'form' => $form,
         ]);
     }
-    #[Route('/{id}', name: 'phase_show', methods: ['GET'])]
+    #[Route('/{id}', name: 'phase_show', methods: ['GET','POST'])]
     public function show(Phase $phase): Response
     {
+        if(isset($_POST["id"])){
+
+            $id = $_POST["id"];
+            $phases = $this->getDoctrine()->getManager()->getRepository(Phase::class)->findAll();
+            $status = $this->getDoctrine()->getManager()->getRepository(Statut::class)->findAll();
+            $valide = null;
+            //dd($status);
+
+            foreach ($status as $s){
+                if($s->getNomStatut()== "Validé"){
+                    $valide = $s;
+                }
+            }
+            foreach ($phases as $p){
+                if($p->getId() == $id){
+                    $p->setStatut($valide);
+                    $this->getDoctrine()->getManager()->persist($p);
+                }
+            }
+            $this->getDoctrine()->getManager()->flush();
+        }
+
+
         return $this->render('phase/show.html.twig', [
             'phase' => $phase,
         ]);
@@ -79,4 +105,6 @@ class PhaseController extends AbstractController
 
         return $this->redirectToRoute('phase_index', [], Response::HTTP_SEE_OTHER);
     }
+
+
 }

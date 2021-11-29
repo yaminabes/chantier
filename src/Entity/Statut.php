@@ -29,9 +29,15 @@ class Statut
      */
     private $taches;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Phase::class, mappedBy="statut")
+     */
+    private $phases;
+
     public function __construct()
     {
         $this->taches = new ArrayCollection();
+        $this->phases = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -90,6 +96,36 @@ class Statut
     public function __toString()
     {
         return $this->nom_statut;
+    }
+
+    /**
+     * @return Collection|Phase[]
+     */
+    public function getPhases(): Collection
+    {
+        return $this->phases;
+    }
+
+    public function addPhase(Phase $phase): self
+    {
+        if (!$this->phases->contains($phase)) {
+            $this->phases[] = $phase;
+            $phase->setStatut($this);
+        }
+
+        return $this;
+    }
+
+    public function removePhase(Phase $phase): self
+    {
+        if ($this->phases->removeElement($phase)) {
+            // set the owning side to null (unless already changed)
+            if ($phase->getStatut() === $this) {
+                $phase->setStatut(null);
+            }
+        }
+
+        return $this;
     }
 
 

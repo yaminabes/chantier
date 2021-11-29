@@ -60,6 +60,12 @@ class Phase
      */
     private $taches;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Statut::class, inversedBy="phases")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $statut;
+
     public function __construct()
     {
         $this->chantier = new ArrayCollection();
@@ -172,6 +178,18 @@ class Phase
     public function __toString()
     {
         return $this->nomPhase;
+    }
+
+    public function getStatut(): ?Statut
+    {
+        return $this->statut;
+    }
+
+    public function setStatut(?Statut $statut): self
+    {
+        $this->statut = $statut;
+
+        return $this;
     }
 
 

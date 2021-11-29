@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Chantier;
 use App\Entity\Phase;
+use App\Entity\Statut;
 use App\Entity\Tache;
 use Doctrine\DBAL\Types\DateType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
@@ -36,6 +37,7 @@ class PhaseType extends AbstractType
                     'expanded' => true,
                 ]
             )
+            ->add('statut')
 
         ;
     }

@@ -7,11 +7,11 @@
     <h1 class="text-center">CHANTIER</h1>
     <br>
 
-<section>
+    <section>
 
-    <table class="table table-bordered align-content-center mx-auto" style="width: 90%">
-         #[Route('/{id}', name: 'tache_delete', methods: ['POST'])]
-   <thead class="thead-dark ">
+        <table class="table table-bordered align-content-center mx-auto" style="width: 90%">
+            #[Route('/{id}', name: 'tache_delete', methods: ['POST'])]
+            <thead class="thead-dark ">
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Date de Debut</th>
@@ -19,7 +19,7 @@
                 <th scope="col">Adresse</th>
                 <th scope="col">actions</th>
             </tr>
-        </thead>
+            </thead>
             <tbody>
             {% for chantier in chantiers %}
                 <tr>
@@ -40,11 +40,11 @@
                 </tr>
             {% endfor %}
             </tbody>
-    </table>
-</section>
+        </table>
+    </section>
 
     <div style="margin-left: 100px">
-    <button type="button" class="btn btn-outline-success mx-auto"><a href="{{ path('chantier_new') }}">Ajouter</a></button>
+        <button type="button" class="btn btn-outline-success mx-auto"><a href="{{ path('chantier_new') }}">Ajouter</a></button>
     </div>
 
 {% endblock %}

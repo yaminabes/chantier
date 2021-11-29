@@ -27,16 +27,16 @@
         'attr': {'placeholder': 'Entrez votre numéro de téléphone...', 'class' : 'form-control'}}) }}
 
 
-    {% if user.role_user == "Prestataire" %}
+    {% if user.role_user == "prestataire" %}
     {{ form_row(form.prestataire, {'label': 'Prestataire'}) }}
     {% endif %}
 
     {% if user.role_user == "Conducteur de travaux" %}
-    {{ form_row(form.conducteurTraveaux, {'label': 'Conducteur de travaux'}) }}
+    {{ form_row(form.conducteurTraveaux, {'label': 'conducteur de travaux'}) }}
     {% endif %}
 
-    {% if user.role_user == "Maitre d'ouvrage" %}
-    {{ form_row(form.maitreOuvrage, {'label': 'Mafdsfdfdfitre d\'ouvrage'}) }}
+    {% if user.role_user == "maitre d'ouvrage" %}
+    {{ form_row(form.maitreOuvrage, {'label': 'Maitre d\'ouvrage'}) }}
     {% endif %}
 
     {{ form_row(form.roles, {'label': 'Rôle'}) }}

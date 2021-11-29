@@ -27,6 +27,24 @@
                 <th>Adresse</th>
                 <td>{{ chantier.adresse }}</td>
             </tr>
+            <tr>
+                {{ dump(chantier) }}
+                <th>Maitre d'ouvrage</th>
+                <td>{{ chantier.maitreOuvrage }}</td>
+            </tr>
+            <tr>
+                <th>Conducteur de travaux</th>
+                <td>{{ chantier.conducteurTravaux }}</td>
+            </tr>
+            <tr>
+                <th>Phases</th>
+                <td>
+                    {% for p in chantier.phases %}
+
+                        <a class="btn btn-primary"  href="{{ path('phase_show', {'id': p.id})}}">{{ p }}</a>
+                    {% endfor %}
+                </td>
+            </tr>
         </tbody>
     </table>
 
