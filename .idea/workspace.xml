@@ -11,20 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="903d9a10-5bcf-4428-810a-7ac8557f6ddf" name="Default Changelist" comment="username in fixtures">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211126081350.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SearchController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header_maitre.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header_prestataire.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Chantier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Chantier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ChantierRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ChantierRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_conduc.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header_conduc.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,6 +245,7 @@
       <workItem from="1637912281121" duration="7897000" />
       <workItem from="1637964250265" duration="784000" />
       <workItem from="1638041709371" duration="6805000" />
+      <workItem from="1638211008379" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="added some cruds">
       <created>1636529835700</created>
